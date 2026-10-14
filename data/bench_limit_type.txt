@@ -1,0 +1,104 @@
+########## det_limit_type=max ##########
+23:35:18 INFO    smart_parking.anpr.engine    OCR engine ready (det_limit_type=max, det_side_len=640, min_text_score=0.50, cls=False)
+SYNTHETIC FIXTURE - rendered plates, not photographed. 280 stills. Engine warm-up 0.0s, excluded from the latency figures below.
+
+1) OCR on the EXACT plate box, by true plate width
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+                    30      2%      2%      10.6    40
+                    45      5%      9%      10.7    40
+                    60     20%     31%      13.9    40
+                    80     30%     42%      14.2    40
+                   110     38%     53%      14.2    40
+                   150     55%     62%      13.8    40
+                   200     48%     62%      14.0    40
+
+   the same crops, split by how they were degraded
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+                  blur     20%     30%      13.8    56
+                 clean     32%     43%      14.0    56
+            compressed     32%     37%      13.7    56
+                 noise     41%     48%      13.8    56
+                  tilt     16%     29%      13.8    56
+
+2) plate DETECTOR on the vehicle box (screens relaxed)
+  plate region located (IoU >= 0.3): 194/280 = 69%
+  of those, the real screens keep:   60/194 = 31%
+  every region proposed: min 33 median 100 max 187 px  (0.8 per vehicle)
+  detector latency: median 29.6 ms/vehicle
+  screens in effect: width 110-520px, aspect 1.4-7.0, vehicle >= 120px, roi_bottom_fraction 0.75, pad 12px
+
+3) OCR on the DETECTOR's box, by PROPOSED width
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+   (min_plate_width screens on the proposed box, not the true one)
+                   125    100%    100%      14.8    24
+                   150    100%    100%      13.9    16
+                   175    100%    100%      13.9    20
+
+4) preprocessing ablation on the exact crop (gain against cost)
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+         raw (control)      5%      5%      14.0    20
+             grayscale      5%      5%      13.7    20
+               + clahe      0%      0%      14.0    20
+             + upscale      0%      0%      14.0    20
+       upscale + clahe      0%      0%      14.2    20
+             + sharpen      5%      5%      14.1    20
+             + denoise      5%      5%      18.6    20
+                all on      0%      0%      41.4    20
+
+  keep only the switches that pay for themselves; the defaults are the winners.
+########## det_limit_type=min ##########
+23:35:40 INFO    smart_parking.anpr.engine    OCR engine ready (det_limit_type=min, det_side_len=640, min_text_score=0.50, cls=False)
+SYNTHETIC FIXTURE - rendered plates, not photographed. 280 stills. Engine warm-up 0.0s, excluded from the latency figures below.
+
+1) OCR on the EXACT plate box, by true plate width
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+                    30      2%      2%      10.9    40
+                    45      5%      9%      10.8    40
+                    60     20%     31%      14.2    40
+                    80     30%     42%      14.0    40
+                   110     38%     53%      14.1    40
+                   150     55%     62%      14.0    40
+                   200     48%     62%      14.1    40
+
+   the same crops, split by how they were degraded
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+                  blur     20%     30%      14.0    56
+                 clean     32%     43%      13.9    56
+            compressed     32%     37%      13.9    56
+                 noise     41%     48%      13.9    56
+                  tilt     16%     29%      14.0    56
+
+2) plate DETECTOR on the vehicle box (screens relaxed)
+  plate region located (IoU >= 0.3): 215/280 = 77%
+  of those, the real screens keep:   29/215 = 13%
+  every region proposed: min 22 median 70 max 185 px  (1.0 per vehicle)
+  detector latency: median 115.1 ms/vehicle
+  screens in effect: width 110-520px, aspect 1.4-7.0, vehicle >= 120px, roi_bottom_fraction 0.75, pad 12px
+
+3) OCR on the DETECTOR's box, by PROPOSED width
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+   (min_plate_width screens on the proposed box, not the true one)
+                   125    100%    100%      64.6     9
+                   150    100%    100%      36.0     8
+                   175    100%    100%      14.0    12
+
+4) preprocessing ablation on the exact crop (gain against cost)
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+         raw (control)      5%      5%      14.2    20
+             grayscale      5%      5%      14.3    20
+               + clahe      0%      0%      14.2    20
+             + upscale      0%      0%      14.1    20
+       upscale + clahe      0%      0%      14.3    20
+             + sharpen      5%      5%      13.8    20
+             + denoise      5%      5%      19.1    20
+                all on      0%      0%      41.8    20
+
+  keep only the switches that pay for themselves; the defaults are the winners.

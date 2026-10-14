@@ -1,0 +1,20 @@
+# nginx reverse proxy for the dashboard bundle plus the API's HTTP and WS surface.
+#
+# No CORS is configured here (the browser talks to this same origin, so CORS never
+# applies) and no certificates are baked in: which entry configuration the container
+# runs - plain HTTP (deploy/nginx.conf) or TLS (deploy/nginx.tls.conf) - is decided
+# by the compose files that mount it. See deploy/docker-compose.yml and
+# deploy/docker-compose.tls.yml.
+FROM nginx:alpine
+
+# Remove the image's own site config (the mounted entry file replaces it) and create
+# the directories the mounts land in, so a config file is missing only because the
+# host did not provide it - not because the image had nowhere to put it.
+RUN rm -f /etc/nginx/conf.d/default.conf \
+    && mkdir -p /etc/nginx/snippets /etc/nginx/ssl
+
+# 443 belongs to the TLS overlay, and `EXPOSE` documents rather than publishes: a
+# container maps no port until compose says so.
+EXPOSE 80 443
+
+CMD ["nginx", "-g", "daemon off;"]

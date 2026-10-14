@@ -1,0 +1,20 @@
+22:55:31 INFO    smart_parking.anpr.engine    OCR engine ready (det_limit_type=max, det_side_len=640, min_text_score=0.50, cls=False)
+source      C:\Users\Saurabh\Downloads\Parking ai sysytem\data\samples\gate_traffic.mp4
+resolution  480x360  fps=30.00  frames=8957  stride=25
+screens     min_plate_width=110px max=520px aspect=1.4-7.0 min_vehicle_width=120px
+no ground truth exists on this footage, so nothing below is an accuracy figure.
+
+frames sampled        200  vehicle detections 748
+vehicles with >=1 text region: 29/748 (4%)
+of those, widest region passes the screens: 0/29 (0%)
+
+vehicle box widths        min=11px  p5=19px  p25=31px  median=52px  p75=80px  p95=151px  max=361px
+all text region widths    min=10px  p5=10px  p25=31px  median=45px  p75=48px  p95=68px  max=86px
+widest region per vehicle min=10px  p5=11px  p25=32px  median=46px  p75=48px  p95=68px  max=86px
+widest region that passed no samples
+widest region aspect      min=1  p5=1  p25=2  median=2  p75=3  p95=4  max=4
+
+100% of vehicles offer a text region narrower than the configured min_plate_width (110px), so the detector is being asked to read plates the OCR stage cannot resolve.
+OCR returned a VALID plate for 0/0 vehicles whose region passed the screens. Unverified: no ground truth, so this is a legibility signal, not accuracy.
+plate detector 17.4 ms/vehicle, OCR 0.0 ms/crop
+annotated stills in data/fixtures/plate_probe (22 frames) - check by eye that the boxes are plates and not signage

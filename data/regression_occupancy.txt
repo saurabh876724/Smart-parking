@@ -1,0 +1,18 @@
+
+camera=lot_cam1  slots=5  source=C:\Users\Saurabh\Downloads\Parking ai sysytem\data\samples\lot_shot5.mp4
+------------------------------------------------------------
+    A2 -> OCCUPIED         track=4 score=0.938
+23:34:13 INFO    smart_parking.parking.occupancy slot A2 -> OCCUPIED (track=4)
+    B2 -> OCCUPIED         track=3 score=1.0
+23:34:13 INFO    smart_parking.parking.occupancy slot B2 -> OCCUPIED (track=3)
+    B1 -> OCCUPIED         track=5 score=0.977
+23:34:14 INFO    smart_parking.parking.occupancy slot B1 -> OCCUPIED (track=5)
+23:34:15 INFO    smart_parking.pipeline.lot   lot_cam1: end of clip after 147 frames
+------------------------------------------------------------
+frames=148  steady_fps=80.2  mean_fps=18.4 (includes 6.2s model warmup)  final={'total': 5, 'occupied': 3, 'available': 2, 'unknown': 0}
+transitions: occupied=3 freed=0
+    A1 FREE             history=FREE
+    A2 OCCUPIED         history=OCCUPIED
+    B1 OCCUPIED         history=OCCUPIED
+    B2 OCCUPIED         history=OCCUPIED
+    B3 FREE             history=FREE

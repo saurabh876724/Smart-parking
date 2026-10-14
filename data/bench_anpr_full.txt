@@ -1,0 +1,51 @@
+22:56:20 INFO    smart_parking.anpr.engine    OCR engine ready (det_limit_type=max, det_side_len=640, min_text_score=0.50, cls=False)
+SYNTHETIC FIXTURE - rendered plates, not photographed. 280 stills. Engine warm-up 0.0s, excluded from the latency figures below.
+
+1) OCR on the EXACT plate box, by true plate width
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+                    30      2%      2%      13.0    40
+                    45      5%      9%      12.4    40
+                    60     20%     31%      15.3    40
+                    80     30%     42%     154.9    40
+                   110     38%     53%     147.3    40
+                   150     55%     62%     151.6    40
+                   200     48%     62%     150.5    40
+
+   the same crops, split by how they were degraded
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+                  blur     20%     30%     140.7    56
+                 clean     32%     43%     142.9    56
+            compressed     32%     37%     135.5    56
+                 noise     41%     48%     134.8    56
+                  tilt     16%     29%     140.4    56
+
+2) plate DETECTOR on the vehicle box (screens relaxed)
+  plate region located (IoU >= 0.3): 194/280 = 69%
+  of those, the real screens keep:   60/194 = 31%
+  every region proposed: min 33 median 100 max 187 px  (0.8 per vehicle)
+  detector latency: median 155.8 ms/vehicle
+  screens in effect: width 110-520px, aspect 1.4-7.0, vehicle >= 120px, roi_bottom_fraction 0.75, pad 12px
+
+3) OCR on the DETECTOR's box, by PROPOSED width
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+   (min_plate_width screens on the proposed box, not the true one)
+                   125    100%    100%     157.2    24
+                   150    100%    100%     153.0    16
+                   175    100%    100%     156.5    20
+
+4) preprocessing ablation on the exact crop (gain against cost)
+                         exact   chars   ms/crop     n
+-------------------------------------------------------
+         raw (control)     29%     36%     153.4   140
+             grayscale     29%     39%     151.7   140
+               + clahe     24%     34%     155.4   140
+             + upscale     29%     38%     148.3   140
+       upscale + clahe     26%     34%     162.4   140
+             + sharpen     27%     36%     156.7   140
+             + denoise     29%     38%     190.5   140
+                all on     23%     33%     221.7   140
+
+  keep only the switches that pay for themselves; the defaults are the winners.

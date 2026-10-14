@@ -1,0 +1,21 @@
+23:28:59 INFO    smart_parking.anpr.engine    OCR engine ready (det_limit_type=max, det_side_len=640, min_text_score=0.50, cls=False)
+camera=gate_cam1  source=C:\Users\Saurabh\Downloads\Parking ai sysytem\data\fixtures\gate_synth.mp4
+tracks=labelled replay from data/fixtures/gate_synth_tracks.json  stride=1
+ocr=rapidocr  min_plate_width=110px  vote=3/7 reads at >= 60% agreement
+------------------------------------------------------------------------
+LABELLED REPLAY: vehicle boxes were supplied, not detected. Plate results below are only as real as the footage.
+23:29:01 INFO    smart_parking.anpr.pipeline  track 1 plate MH20AB1234 (3/3 reads agree 100%, ocr 0.99, det 0.81)
+  frame    18 t=  1.20s  track   1 -> MH20AB1234  (3 reads, 100% agreement, ocr 0.99)
+------------------------------------------------------------------------
+frames processed 40  vehicles seen 40  plate candidates 24  OCR reads 24
+accepted reads     24 (100% of reads)  of which repaired 0
+stable plates     1  events published 1
+latency           detector 114.5 ms/vehicle, OCR 79.1 ms/read
+throughput        6.1 frames/s overall (includes 0.1s engine warm-up), 6.1 frames/s steady state
+
+track  predicted        ground truth     stable at  verdict
+------------------------------------------------------------------
+    1  MH20AB1234       MH20AB1234       1.20s      correct
+
+1 correct, 0 wrong, 0 never read of 1 tracks
+Synthetic fixture: this validates the software chain, not a gate.

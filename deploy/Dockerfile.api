@@ -1,0 +1,66 @@
+# Backend API - GPU-enabled FastAPI service
+# Uses NVIDIA CUDA base image for YOLO inference on RTX 4050
+
+FROM nvidia/cuda:12.2.2-runtime-ubuntu22.04
+
+# Install Python and system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3.10 \
+    python3-pip \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy project files
+COPY pyproject.toml ./
+COPY src/ ./src/
+COPY scripts/ ./scripts/
+COPY configs/ ./configs/
+COPY alembic.ini ./
+COPY data/architecture_doc.txt ./data/
+
+# Install Python dependencies (include db + backend extras for FastAPI + Alembic)
+# First install all dependencies explicitly, then install the package itself
+RUN pip install --no-cache-dir \
+    opencv-python>=4.9 \
+    ultralytics>=8.4 \
+    torch>=2.2 \
+    shapely>=2.0 \
+    pyyaml>=6.0 \
+    pydantic>=2.7 \
+    pydantic-settings>=2.2 \
+    numpy>=1.26 \
+    sqlalchemy>=2.0 \
+    alembic>=1.13 \
+    fastapi>=0.111 \
+    uvicorn[standard]>=0.30 \
+    python-jose[cryptography]>=3.3 \
+    argon2-cffi>=23.1 \
+    python-multipart>=0.0.9 \
+    lap>=0.5.12 && \
+    pip install --no-cache-dir .
+
+# Detection weights, copied AFTER the pip layer so changing them never
+# invalidates the dependency install (which needs a network this machine does
+# not always have). configs/app.yaml points detection.model_path here; the
+# compose file also mounts ../models read-only, which wins over this copy.
+COPY models/ ./models/
+
+# Create non-root user for security
+RUN useradd --create-home --shell /bin/bash parking && \
+    chown -R parking:parking /app
+USER parking
+
+# Expose API port
+EXPOSE 8000
+
+# No image-level HEALTHCHECK: /health is authenticated by design, so a bare
+# probe can never pass. deploy/docker-compose.yml defines the real one, which
+# logs in first and therefore also proves the database and auth layer are up.
+
+# Run migrations then start server
+CMD ["sh", "-c", "python3 scripts/migrate.py upgrade head && python3 scripts/serve.py --host 0.0.0.0"]

@@ -1,0 +1,686 @@
+{
+  "fps": 15,
+  "frames": 40,
+  "tracks": [
+    {
+      "frame": 0,
+      "track_id": 1,
+      "bbox": [
+        121,
+        75,
+        359,
+        345
+      ],
+      "plate_rect": [
+        205,
+        303,
+        275,
+        333
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 1,
+      "track_id": 1,
+      "bbox": [
+        116,
+        66,
+        364,
+        354
+      ],
+      "plate_rect": [
+        204,
+        310,
+        277,
+        342
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 2,
+      "track_id": 1,
+      "bbox": [
+        111,
+        62,
+        369,
+        359
+      ],
+      "plate_rect": [
+        202,
+        314,
+        278,
+        347
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 3,
+      "track_id": 1,
+      "bbox": [
+        104,
+        53,
+        376,
+        360
+      ],
+      "plate_rect": [
+        200,
+        313,
+        280,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 4,
+      "track_id": 1,
+      "bbox": [
+        99,
+        48,
+        381,
+        360
+      ],
+      "plate_rect": [
+        199,
+        312,
+        282,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 5,
+      "track_id": 1,
+      "bbox": [
+        94,
+        44,
+        386,
+        360
+      ],
+      "plate_rect": [
+        197,
+        311,
+        283,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 6,
+      "track_id": 1,
+      "bbox": [
+        87,
+        35,
+        393,
+        360
+      ],
+      "plate_rect": [
+        195,
+        309,
+        285,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 7,
+      "track_id": 1,
+      "bbox": [
+        82,
+        30,
+        398,
+        360
+      ],
+      "plate_rect": [
+        194,
+        308,
+        287,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 8,
+      "track_id": 1,
+      "bbox": [
+        77,
+        21,
+        403,
+        360
+      ],
+      "plate_rect": [
+        192,
+        306,
+        288,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 9,
+      "track_id": 1,
+      "bbox": [
+        70,
+        17,
+        410,
+        360
+      ],
+      "plate_rect": [
+        190,
+        305,
+        290,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 10,
+      "track_id": 1,
+      "bbox": [
+        65,
+        8,
+        415,
+        360
+      ],
+      "plate_rect": [
+        189,
+        303,
+        292,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 11,
+      "track_id": 1,
+      "bbox": [
+        60,
+        3,
+        420,
+        360
+      ],
+      "plate_rect": [
+        187,
+        302,
+        293,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 12,
+      "track_id": 1,
+      "bbox": [
+        53,
+        0,
+        427,
+        360
+      ],
+      "plate_rect": [
+        185,
+        300,
+        295,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 13,
+      "track_id": 1,
+      "bbox": [
+        48,
+        0,
+        432,
+        360
+      ],
+      "plate_rect": [
+        184,
+        299,
+        297,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 14,
+      "track_id": 1,
+      "bbox": [
+        43,
+        0,
+        437,
+        360
+      ],
+      "plate_rect": [
+        182,
+        298,
+        298,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 15,
+      "track_id": 1,
+      "bbox": [
+        36,
+        0,
+        444,
+        360
+      ],
+      "plate_rect": [
+        180,
+        296,
+        300,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 16,
+      "track_id": 1,
+      "bbox": [
+        31,
+        0,
+        449,
+        360
+      ],
+      "plate_rect": [
+        179,
+        295,
+        302,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 17,
+      "track_id": 1,
+      "bbox": [
+        26,
+        0,
+        454,
+        360
+      ],
+      "plate_rect": [
+        177,
+        293,
+        303,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 18,
+      "track_id": 1,
+      "bbox": [
+        19,
+        0,
+        461,
+        360
+      ],
+      "plate_rect": [
+        175,
+        291,
+        305,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 19,
+      "track_id": 1,
+      "bbox": [
+        14,
+        0,
+        466,
+        360
+      ],
+      "plate_rect": [
+        174,
+        290,
+        307,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 20,
+      "track_id": 1,
+      "bbox": [
+        9,
+        0,
+        471,
+        360
+      ],
+      "plate_rect": [
+        172,
+        289,
+        308,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 21,
+      "track_id": 1,
+      "bbox": [
+        2,
+        0,
+        478,
+        360
+      ],
+      "plate_rect": [
+        170,
+        287,
+        310,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 22,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        169,
+        286,
+        312,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 23,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        167,
+        285,
+        313,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 24,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        165,
+        283,
+        315,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 25,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        164,
+        281,
+        317,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 26,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        162,
+        280,
+        318,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 27,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        160,
+        278,
+        320,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 28,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 29,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 30,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 31,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 32,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 33,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 34,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 35,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 36,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 37,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 38,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    },
+    {
+      "frame": 39,
+      "track_id": 1,
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "plate_rect": [
+        140,
+        261,
+        340,
+        348
+      ],
+      "ground_truth": "MH20AB1234"
+    }
+  ]
+}

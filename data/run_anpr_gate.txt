@@ -1,0 +1,11 @@
+23:26:46 INFO    smart_parking.anpr.engine    OCR engine ready (det_limit_type=max, det_side_len=640, min_text_score=0.50, cls=False)
+camera=gate_cam1  source=C:\Users\Saurabh\Downloads\Parking ai sysytem\data\samples\gate_traffic.mp4
+tracks=YOLO + ByteTrack  stride=25
+ocr=rapidocr  min_plate_width=110px  vote=3/7 reads at >= 60% agreement
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+frames processed 40  vehicles seen 138  plate candidates 0  OCR reads 0
+accepted reads     0 (0% of reads)  of which repaired 0
+stable plates     0  events published 0
+latency           detector 1.8 ms/vehicle, OCR 0.0 ms/read
+throughput        2.0 frames/s overall (includes 15.1s engine warm-up), 8.1 frames/s steady state

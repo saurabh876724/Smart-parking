@@ -1,0 +1,21 @@
+{
+  "camera_id": "gate_cam1",
+  "frame_size": { "width": 480, "height": 360 },
+  "coordinate_space": "normalised_0_1",
+  "notes": "Demo calibration for data/samples/gate_traffic.mp4. That clip is a two-way public road, not a parking barrier: over its first 30 s (YOLO+ByteTrack, stride 3) traffic crossed the centre vertical in both directions - 4 tracks left-to-right and 4 right-to-left at x=0.50, and 13 of the 31 tracks long enough to judge barely moved at all. So both lines sit on the same segment with opposite directions, which is a single bidirectional lane: whichever way a vehicle passes it, one role matches and the other is a reversal. The zone excludes the 10% frame margins, where vehicles appear and disappear instead of crossing. Re-draw this with scripts/calibrate.py --gate for a real gate camera.",
+  "lines": [
+    {
+      "name": "in",
+      "role": "ENTRY",
+      "direction": "negative",
+      "points": [[0.50, 0.15], [0.50, 0.70]]
+    },
+    {
+      "name": "out",
+      "role": "EXIT",
+      "direction": "positive",
+      "points": [[0.50, 0.15], [0.50, 0.70]]
+    }
+  ],
+  "zone": [[0.10, 0.10], [0.90, 0.10], [0.90, 0.75], [0.10, 0.75]]
+}

@@ -1,0 +1,39 @@
+# Development camera sources. In production these come from the cameras table.
+#
+# NOTE: data/samples/parking_lot.mp4 is an edited compilation with hard cuts at
+# frames 254 / 359 / 440 / 574, so slot calibration only holds within one
+# shot. The trimmed single-shot clips below are what the demo runs on.
+#
+# fps_limit throttles the *live* reader only. File replay bypasses it and reads
+# every frame, timing the occupancy FSMs from the clip's own frame rate.
+cameras:
+  - id: lot_cam1
+    name: Lot camera 1
+    role: LOT
+    source: data/samples/lot_shot5.mp4
+    slots_file: configs/slots/lot_a_cam1.json
+    fps_limit: 15
+
+  - id: lot_cam1_shot1
+    name: Lot camera 1, opening shot
+    role: LOT
+    source: data/samples/lot_shot1.mp4
+    slots_file: configs/slots/lot_a_cam1.json
+    fps_limit: 15
+
+  - id: gate_cam1
+    name: Gate / entrance camera
+    role: GATE_ENTRY
+    # 5-minute road clip, used for detection and tracking benchmarks.
+    source: data/samples/gate_traffic.mp4
+    gate_file: configs/gates/gate_a.json
+    fps_limit: 15
+
+  # Phase 6 fixture: rendered vehicles with known crossing times, for the
+  # entry/exit acceptance check (scripts/make_gate_fixture.py). NOT a gate.
+  - id: gate_visit
+    name: Synthetic gate visit clip (rendered fixture)
+    role: GATE_ENTRY
+    source: data/fixtures/gate_visit.mp4
+    gate_file: configs/gates/gate_visit_synth.json
+    fps_limit: 15

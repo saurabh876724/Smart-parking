@@ -1,0 +1,10160 @@
+[
+ {
+  "type": "hello",
+  "channel": "session",
+  "camera_id": null,
+  "ts": 1792000905.3598702,
+  "payload": {
+   "role": "ADMIN",
+   "reveal_plates": true,
+   "queue_size": 200
+  }
+ },
+ {
+  "type": "vehicle_exited",
+  "channel": "session",
+  "camera_id": "gate_visit",
+  "ts": 1792000907.8682792,
+  "payload": {
+   "session_id": "gate_visit-00002",
+   "camera_id": "gate_visit",
+   "track_id": 1,
+   "plate": null,
+   "status": "NEEDS_REVIEW",
+   "entry_ts": 1792000904.935,
+   "exit_ts": 1792000907.868,
+   "duration": 2.933,
+   "exit_reason": "line",
+   "slot_id": null,
+   "ocr_confidence": null,
+   "review_reason": "no plate read",
+   "anomaly_reason": null
+  }
+ },
+ {
+  "type": "violation",
+  "channel": "violation",
+  "camera_id": "gate_visit",
+  "ts": 1792000908.934946,
+  "payload": {
+   "session_id": "gate_visit-00004",
+   "camera_id": "gate_visit",
+   "track_id": 4,
+   "plate": null,
+   "status": "ANOMALY",
+   "entry_ts": null,
+   "exit_ts": 1792000908.935,
+   "duration": null,
+   "exit_reason": "line",
+   "slot_id": null,
+   "ocr_confidence": null,
+   "review_reason": null,
+   "anomaly_reason": "exit_without_entry",
+   "kind": "exit_without_entry"
+  }
+ },
+ {
+  "type": "slot_snapshot",
+  "channel": "slot",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.101651,
+  "payload": {
+   "slot_id": "A1",
+   "status": "FREE",
+   "track_id": null,
+   "score": 0.0
+  }
+ },
+ {
+  "type": "slot_snapshot",
+  "channel": "slot",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.101651,
+  "payload": {
+   "slot_id": "A2",
+   "status": "FREE",
+   "track_id": 4,
+   "score": 0.962
+  }
+ },
+ {
+  "type": "slot_snapshot",
+  "channel": "slot",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.101651,
+  "payload": {
+   "slot_id": "B1",
+   "status": "FREE",
+   "track_id": null,
+   "score": 0.0
+  }
+ },
+ {
+  "type": "slot_snapshot",
+  "channel": "slot",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.101651,
+  "payload": {
+   "slot_id": "B2",
+   "status": "FREE",
+   "track_id": 3,
+   "score": 1.0
+  }
+ },
+ {
+  "type": "slot_snapshot",
+  "channel": "slot",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.101651,
+  "payload": {
+   "slot_id": "B3",
+   "status": "FREE",
+   "track_id": null,
+   "score": 0.0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 0,
+   "available": 5,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "slot_occupied",
+  "channel": "slot",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.701651,
+  "payload": {
+   "slot_id": "A2",
+   "status": "OCCUPIED",
+   "track_id": 4,
+   "score": 0.938
+  }
+ },
+ {
+  "type": "slot_occupied",
+  "channel": "slot",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.701651,
+  "payload": {
+   "slot_id": "B2",
+   "status": "OCCUPIED",
+   "track_id": 3,
+   "score": 1.0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000904.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000905.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000906.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 2,
+   "available": 3,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "slot_occupied",
+  "channel": "slot",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.6683176,
+  "payload": {
+   "slot_id": "B1",
+   "status": "OCCUPIED",
+   "track_id": 5,
+   "score": 0.985
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000907.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000908.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000909.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000910.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000911.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000912.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000913.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000914.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000915.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000916.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000917.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000918.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000919.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000920.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000921.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000922.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000923.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000924.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000925.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000926.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000927.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000928.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000929.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.901651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.9349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000930.9683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.001651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.0349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.0683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.101651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.1349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.1683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.201651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.2349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.2683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.301651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.3349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.3683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.401651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.4349842,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.4683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.501651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.5349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.5683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.601651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.6349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.6683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.701651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.7349844,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.7683177,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.801651,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.8349843,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ },
+ {
+  "type": "summary",
+  "channel": "summary",
+  "camera_id": "lot_cam1",
+  "ts": 1792000931.8683176,
+  "payload": {
+   "total": 5,
+   "occupied": 3,
+   "available": 2,
+   "unknown": 0
+  }
+ }
+]

@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets and local config
+.env
+*.local.yaml
+# The JWT signing key scripts/dev_secret.py writes for a laptop run. It is a key,
+# so it never belongs in a commit, and there is no "ignore" that is too early.
+data/.secret
+# Phase 7-8: the SQLite files hold visits and password hashes. A database in
+# version control is a disclosure of both.
+data/*.db
+data/*.db-wal
+data/*.db-shm
+# Same reason, and `data/*.db` does not reach it: a snapshot in a subdirectory is
+# still a copy of every visit and every password hash. `scripts/migrate.py --url` and
+# a pre-migration backup both land here.
+data/backups/
+# The 2026-10-13 corruption incident left four more whole databases one level
+# deeper, and `data/*.db` still does not reach them. The recovery scripts stay in
+# the commit; the database copies inside do not.
+data/incident_*/**/*.db
+data/incident_*/**/*.db-wal
+data/incident_*/**/*.db-shm
+data/incident_*/**/*.sqlite
+data/incident_*/**/*.sqlite3
+# Ad-hoc run logs. `data/out/serve_smoke2.log` holds signed access tokens printed
+# by the smoke test, which is a credential in the clear whatever its expiry.
+data/out/
+
+# Model weights and generated media
+models/**/*.pt
+models/**/*.engine
+models/**/*.onnx
+data/samples/
+data/evidence/
+data/datasets/
+*.mp4
+*.avi
+runs/
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# Deployment (Phase 10)
+deploy/secrets/
+deploy/backups/
+deploy/.env
+deploy/soak-test-*.log
+# TLS material. `deploy/nginx.tls.conf` looks for fullchain.pem and privkey.pem in
+# this directory, so the path is part of the deployment and the contents are a
+# private key: the directory is created by hand (or by the README's `mkdir -p`),
+# never by a commit.
+deploy/ssl/

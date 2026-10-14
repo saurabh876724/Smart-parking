@@ -1,0 +1,43 @@
+# TLS overlay for the production deployment - certificates required.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.tls.yml up -d
+#
+# Compose merges the two files service by service; the `!override` tags below say
+# that this file's `volumes` and `ports` lists *replace* the base lists instead of
+# being added to them, which is what lets nginx.tls.conf take the place of
+# nginx.conf at /etc/nginx/conf.d/default.conf rather than sitting next to it and
+# duplicating the `upstream` and `log_format` definitions. `!override` needs Docker
+# Compose v2.24 or newer (`docker compose version`); an older one rejects the tag
+# out loud rather than merging the wrong thing.
+#
+# Before starting this, put a certificate and its key in deploy/ssl/ named
+# fullchain.pem and privkey.pem. Without them the nginx container exits with
+# "cannot load certificate ... No such file or directory" and the dashboard stays
+# unreachable - which is the point: an HTTPS that does not exist should not look
+# like a running service.
+#
+# The base file, on its own, stays the local-development and TLS-less deployment:
+# port 80 only, no certificate paths anywhere in the config it mounts.
+
+services:
+  nginx:
+    volumes: !override
+      - ../frontend/dist:/usr/share/nginx/html:ro
+      - ./nginx-http.conf:/etc/nginx/snippets/http.conf:ro
+      - ./nginx-site.conf:/etc/nginx/snippets/site.conf:ro
+      # The entry file the base compose also mounts at this path, replaced by the
+      # TLS one: same two snippets, same routing, 443 in front.
+      - ./nginx.tls.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    ports: !override
+      - "80:80"
+      - "443:443"
+    healthcheck:
+      # Probes the encrypted listener, so "the HTTPS service is healthy" means TLS
+      # actually completed a handshake inside the container. `-k` because the
+      # certificate this project is handed is frequently self-signed: the check is
+      # that the listener speaks TLS, not that a CA vouches for it.
+      test: ["CMD", "curl", "-fk", "https://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

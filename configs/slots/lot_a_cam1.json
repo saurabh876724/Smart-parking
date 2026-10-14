@@ -1,0 +1,33 @@
+{
+  "camera_id": "lot_cam1",
+  "frame_size": { "width": 478, "height": 850 },
+  "coordinate_space": "normalised_0_1",
+  "notes": "data/samples/parking_lot.mp4. A1/A2 are the near row the car reverses into; B1-B3 are the far row visible behind the aisle. Authored with scripts/calibrate.py --grid.",
+  "slots": [
+    {
+      "code": "A1",
+      "type": "REGULAR",
+      "polygon": [[0.293, 0.445], [0.722, 0.447], [0.900, 0.824], [0.126, 0.824]]
+    },
+    {
+      "code": "A2",
+      "type": "REGULAR",
+      "polygon": [[0.722, 0.447], [1.000, 0.461], [1.000, 0.824], [0.900, 0.824]]
+    },
+    {
+      "code": "B1",
+      "type": "DISABLED",
+      "polygon": [[0.000, 0.231], [0.163, 0.231], [0.184, 0.320], [0.000, 0.320]]
+    },
+    {
+      "code": "B2",
+      "type": "REGULAR",
+      "polygon": [[0.324, 0.231], [0.582, 0.231], [0.603, 0.336], [0.310, 0.336]]
+    },
+    {
+      "code": "B3",
+      "type": "RESERVED",
+      "polygon": [[0.732, 0.235], [0.979, 0.235], [0.987, 0.336], [0.724, 0.336]]
+    }
+  ]
+}

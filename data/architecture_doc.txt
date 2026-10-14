@@ -1,0 +1,1519 @@
+===== PAGE 1 =====
+AI-Based Smart Parking
+Management System
+Production-Oriented Architecture for a Final-Year AI/ML Project
+YOLO · ByteTrack/BoT-SORT · OpenCV · ANPR/OCR · FastAPI · PostgreSQL · React
+Development target: Windows 11, RTX 4050 6 GB, 16 GB RAM, Python + PyTorch
+Scaling path: 1 camera / 20–50 slots → multiple cameras / hundreds of slots
+Architecture document · September 2026
+
+===== PAGE 2 =====
+AI-Based Smart Parking Management System – Architecture
+Page 2
+Contents
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 3
+0. Design Principles and Decisions
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 4
+A. High-Level Architecture
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 6
+B. Detailed Component Architecture
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 8
+C. Data Flow: End to End
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 10
+D. Database Design
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 12
+E. API Architecture
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 14
+F. AI Pipeline
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 15
+G. Project Folder Structure
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 16
+H. Development Roadmap
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 18
+I. MVP vs Advanced Version
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 19
+J. Technology Selection and Trade-offs
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 21
+Hardware
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 22
+Scalability Design
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 23
+Security
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 24
+Failure Handling
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 25
+Violation Detection (practical rules)
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 26
+Recommended Architecture: Summary and Rationale
+
+===== PAGE 3 =====
+AI-Based Smart Parking Management System – Architecture
+Page 3
+0. Design Principles and Decisions
+ Separate perception from business logic. The AI layer only emits facts ("track 17 is inside slot A3",
+"plate reads MH20AB1234, conf 0.91"). The Parking Intelligence Engine turns facts into meaning
+(sessions, fees, violations). You can swap YOLO versions or OCR engines without touching billing.
+ Two camera roles, not one. Plates are only readable when the plate is roughly 100+ px wide and the
+vehicle is slow and close. A wide-angle camera over 50 slots can detect occupancy but usually cannot
+read plates. GATE camera: entry/exit and ANPR. LOT camera: slot occupancy and violations. For a
+one-camera student demo, one video can play both roles if vehicles pass close to the camera at the
+entrance.
+ Run ANPR only when needed. Detection and tracking run continuously. Plate detection and OCR run
+only for vehicles in the gate zone, on the best few frames per track. This is the biggest saving on a 6 GB
+GPU.
+ Modular monolith first, services later. Start with one deployable app with clean module boundaries
+and interfaces (EventBus, Repository, OCREngine). Split into processes/containers only when a measured
+need appears.
+ Store events, not frames. Persist state changes (slot FREE→OCCUPIED, session start/end, violations),
+not per-frame detections; otherwise the database grows by millions of rows per day.
+ Everything is confidence-aware. Low-confidence plates, ambiguous tracks and uncertain slots go to a
+NEEDS_REVIEW / UNKNOWN state instead of silently producing wrong billing.
+
+===== PAGE 4 =====
+AI-Based Smart Parking Management System – Architecture
+Page 4
+A. High-Level Architecture
+ Figure 1 – End-to-end architecture: cameras → AI worker → event bus → intelligence engine → database/API → dashboard
+Real-time flow in one paragraph
+Each camera has a grabber thread that keeps only the newest frame (dropping old ones), so latency never
+accumulates. The inference loop takes that frame, runs YOLO and the tracker, and updates slot state
+machines and gate logic. It emits small JSON events on the bus. The Parking Intelligence Engine consumes
+them, writes to PostgreSQL, and pushes updates over WebSocket. Video goes to the browser separately from
+metadata: the frontend draws slot overlays from WebSocket data.
+Mermaid source (for your report / GitHub README)
+
+===== PAGE 5 =====
+AI-Based Smart Parking Management System – Architecture
+Page 5
+flowchart TD
+  C[Camera RTSP / Webcam / File] --> FG[Frame Grabber - latest frame only]
+  FG --> PRE[Preprocess: resize, ROI, frame skip]
+  PRE --> DET[YOLO Vehicle Detection]
+  DET --> TRK[Tracking: ByteTrack / BoT-SORT]
+  TRK --> OCC[Slot Occupancy + Debounce FSM]
+  TRK --> GATE[Gate Logic: entry/exit lines]
+  GATE --> PLT[Plate Detector] --> OCR[OCR + Validation + Voting]
+  OCC --> VIO[Violation Detector]
+  OCC --> BUS[Event Bus]
+  OCR --> BUS
+  GATE --> BUS
+  VIO --> BUS
+  BUS --> PIE[Parking Intelligence Engine]
+  PIE --> DB[(PostgreSQL)]
+  PIE --> WS[WebSocket Hub]
+  DB --> API[FastAPI REST]
+  API --> UI[React Dashboard]
+  WS --> UI
+
+===== PAGE 6 =====
+AI-Based Smart Parking Management System – Architecture
+Page 6
+B. Detailed Component Architecture
+#
+Component
+Responsibility
+Input
+Output
+Tech
+1
+Camera
+Manager
+Load camera configs,
+start/stop/restart pipelines,
+health checks
+cameras table /
+YAML
+Pipeline handles,
+health status
+Python, asyncio +
+threads
+2
+Frame Grabber
+Read RTSP/webcam/file;
+reconnect with backoff; keep
+latest frame only
+RTSP URL / device
+/ file
+Frame(camera_id, ts,
+ndarray)
+OpenCV (FFMPEG
+backend); PyAV
+3
+Preprocessor
+Resize, ROI mask, frame
+skipping
+Frame
+Frame ready for
+model
+OpenCV
+4
+Vehicle
+Detector
+Detect vehicles
+Frame
+[bbox, class, conf]
+Ultralytics YOLO, COCO
+classes 2,3,5,7
+5
+Tracker
+Persistent IDs across frames
+Detections
+[track_id, bbox,
+class, conf, velocity]
+ByteTrack → BoT-SORT
+6
+Slot Occupancy
+Engine
+Map tracks to slot polygons;
+per-slot debounce FSM
+Tracks + polygons
+Slot state changes
+Shapely / OpenCV,
+custom FSM
+7
+Gate Logic
+Entry/exit line crossing, zone
+dwell, direction
+Tracks + gate
+geometry
+VEHICLE_ENTERED /
+VEHICLE_EXITED
+Shapely, custom
+8
+Plate Detector
+Find plate inside vehicle crop
+Vehicle crop
+Plate bbox + conf
+Custom-trained small
+YOLO
+9
+Plate
+Preprocessor
+Pad, deskew, upscale, contrast
+normalise
+Plate crop
+Cleaned image
+OpenCV (CLAHE,
+perspective)
+1
+0
+OCR Engine
+Read text behind an interface
+Plate image
+(text, conf)
+PaddleOCR or EasyOCR
+1
+1
+Validator +
+Voter
+Normalise, fix O/0 I/1 B/8,
+regex-validate, vote across
+frames
+OCR results per
+track
+Final plate +
+confidence
+Python, rapidfuzz
+1
+2
+Violation
+Detector
+Rule-based checks
+Slot states, tracks,
+plate lists
+Violation events
+Custom rules
+1
+3
+Event Bus
+Decouple AI from backend
+Events
+Events
+In-memory queue →
+Redis Streams
+1
+4
+Parking
+Intelligence
+Engine
+Sessions, slot assignment,
+duration, fees, reservations,
+alerts
+Events
+DB writes, WS
+pushes
+Python service layer
+1
+5
+Repository
+Layer
+DB access isolated from
+business logic
+Domain objects
+Rows
+SQLAlchemy 2.x +
+Alembic
+1
+6
+REST API
+CRUD, queries, reports
+HTTP
+JSON
+FastAPI + Pydantic
+1
+7
+WebSocket Hub
+Push slot status, events, alerts
+Bus events
+WS messages
+FastAPI WebSockets
+1
+8
+Video Relay
+Live video to browser
+Annotated frames
+Stream
+MVP: MJPEG; later
+MediaMTX +
+WebRTC/HLS
+1
+9
+Dashboard
+Operator UI
+REST + WS
+UI
+React + TypeScript +
+Vite
+2
+0
+Calibration Tool
+Draw slot polygons and gate
+lines on a snapshot
+Camera snapshot
+Config JSON
+(normalised coords)
+MVP: OpenCV script;
+later React canvas
+Key internal designs
+Slot state machine (per slot – this is what kills flicker)
+
+===== PAGE 7 =====
+AI-Based Smart Parking Management System – Architecture
+Page 7
+ Figure 2 – Debounce state machine. Thresholds live in config, not code.
+Freeing takes longer than occupying because a false FREE (which lets the system double-assign a slot) is
+worse than a delayed FREE.
+Overlap metric. Use the vehicle's ground footprint (lower ~40% of the bounding box) since the top of a car
+in an angled view overlaps neighbouring slots. Score = area(footprint ∩ slot_polygon) / area(slot_polygon).
+Assign each vehicle to at most one slot (greedy or Hungarian by highest score). A vehicle with significant
+overlap (>0.2) on two slots is a “parked across lines” violation.
+Occlusion rule. If a parked vehicle's track is lost while inside a slot, and no track exits the slot region, hold
+OCCUPIED. Only release after the FREE timer and no occlusion evidence. An optional second opinion later is
+a small slot-crop classifier (occupied/empty, trainable on the public PKLot dataset).
+Identity design. Tracker IDs are temporary, per camera, and reset on restart. Real identity comes from the
+plate. The system keeps track_id → plate → session_id bindings in memory and persists them in the session
+row. If a track is lost and re-acquired, the plate re-attaches it to the same session.
+
+===== PAGE 8 =====
+AI-Based Smart Parking Management System – Architecture
+Page 8
+C. Data Flow: End to End
+ Figure 3 – Sequence: vehicle enters → plate read → slot occupied → exit → session closed
+Step by step
+ 1. Vehicle enters view. The grabber delivers the latest frame. YOLO returns boxes for {car, motorcycle,
+bus, truck}. Detections below the confidence threshold (start at 0.35) are dropped; detections outside the
+ROI mask are ignored.
+ 2. Tracking. ByteTrack matches detections to existing tracks (Kalman + IoU) and assigns track_id=17.
+Its trajectory (centroid history) is kept in a short ring buffer.
+ 3. Gate event. The centroid crosses the virtual ENTRY line in the configured direction →
+VEHICLE_ENTERED. Direction uses the sign of the cross product so jitter near the line does not
+double-count. Each track fires an entry event at most once (idempotency key camera_id + track_id +
+event_type).
+ 4. Plate detection. While the track is in the gate zone, the vehicle crop goes to the plate detector at
+~3–5 FPS. Each frame is scored by plate size, sharpness (Laplacian variance) and detector confidence.
+The top-K crops are kept.
+ 5. OCR + validation. Per top crop: pad, upscale to ~64–96 px height, CLAHE, deskew, run OCR,
+normalise (uppercase, strip symbols), apply position-aware character correction, check the per-country
+regex. Then weighted vote across frames: accept when the same string wins ≥2 times with average
+confidence ≥0.80. Otherwise keep collecting until the vehicle leaves the gate zone; if still uncertain, mark
+NEEDS_REVIEW with the best crop saved.
+ 6. Session creation. The engine creates parking_sessions(status=ACTIVE, entry_time, plate_id,
+entry_image). It checks the plate against blacklist/whitelist/reservations. A duplicate ACTIVE session for
+
+===== PAGE 9 =====
+AI-Based Smart Parking Management System – Architecture
+Page 9
+the same plate is flagged as an anomaly (possible missed exit).
+ 7. Slot assignment. When a slot FSM turns OCCUPIED and the occupying track is bound to a session,
+the engine sets session.slot_id and opens a slot_occupancy_history row. If the track cannot be linked
+(cross-camera handoff failed), the slot is still OCCUPIED with session_id = NULL – honest and correct for
+occupancy counts.
+ 8. Exit. The vehicle leaves its slot (PENDING_FREE → FREE), then crosses the EXIT line or is last seen in
+the exit zone for >N seconds. The engine finds the ACTIVE session by plate (or track binding), sets
+exit_time, duration = exit − entry, status=COMPLETED.
+ 9. Billing (optional). A tariff engine computes the fee (free minutes, hourly rate, daily cap, rounding)
+and creates a payments row (PENDING). Gateway integration is a later feature; for the MVP “compute and
+display” is enough.
+ 10. Dashboard update. Every step pushes a small WebSocket message; the UI updates slot map,
+counters, history and alerts without polling.
+
+===== PAGE 10 =====
+AI-Based Smart Parking Management System – Architecture
+Page 10
+D. Database Design
+PostgreSQL is recommended (reasoning in section J). The design supports multiple lots and cameras from
+day one at almost no cost.
+ Figure 4 – Entity-relationship diagram (all relationships are one-to-many, crow's foot at the “many” side)
+Table summary
+Table
+Key columns
+Notes
+users
+id, email (UK), password_hash, role, is_active
+Roles: ADMIN | OPERATOR | VIEWER |
+CUSTOMER
+parking_lots
+id, name, timezone, total_slots
+Enables multi-lot from day one
+cameras
+id, lot_id, name, role, rtsp_url_encrypted, status,
+last_seen_at, config (JSONB)
+role: GATE_ENTRY | GATE_EXIT | LOT; config
+holds gate lines, ROI, fps
+parking_slots
+id, lot_id, camera_id, slot_code (UK), polygon (JSONB),
+slot_type, current_status, status_since
+polygon in normalised 0–1 coords; type:
+REGULAR|DISABLED|RESERVED|EV|STAFF
+license_plates
+id, plate_encrypted, plate_hash (UK), plate_masked,
+country, list_status
+HMAC for lookup, AES-GCM for storage, mask
+for UI
+vehicles
+id, plate_id, owner_id, vehicle_type, is_registered
+Only registered vehicles; walk-ins have plate
+but no vehicle
+parking_sessions
+id, lot_id, vehicle_id?, plate_id, slot_id?,
+entry/exit_camera_id, entry/exit_time,
+duration_seconds, plate_confidence, status,
+entry/exit_image_path
+status: ACTIVE | COMPLETED | NEEDS_REVIEW
+| ABANDONED
+slot_occupancy_his
+tory
+id, slot_id, session_id?, started_at, ended_at, track_id
+Slot-level history, even for unidentified
+vehicles
+reservations
+id, slot_id, user_id, vehicle_id, start_time, end_time,
+status
+Reserved slots
+tariffs
+id, lot_id, vehicle_type, rules (JSONB), is_active
+free_minutes, hourly, daily_cap, rounding
+payments
+id, session_id, tariff_id, amount, currency, method,
+status, paid_at, txn_ref
+PENDING | PAID | WAIVED | FAILED
+detection_logs
+id (bigint), camera_id, ts, event_type, track_id,
+vehicle_class, payload (JSONB)
+Diagnostic events only; partition by day; 7–30
+day retention
+
+===== PAGE 11 =====
+AI-Based Smart Parking Management System – Architecture
+Page 11
+Table
+Key columns
+Notes
+violations
+id, type, slot_id, session_id, camera_id, severity, status,
+evidence_path, detected_at, resolved_at
+WRONG_PARKING | OUTSIDE_SLOT |
+DOUBLE_PARK | RESERVED_SLOT |
+DISABLED_SLOT | UNAUTHORIZED | OVERSTAY
+audit_logs
+id, user_id, action, entity, entity_id, ip, ts, details
+Append-only
+Relationship notes
+ license_plates vs vehicles: a plate is something the camera reads; a vehicle is a registered entity. Most
+walk-in vehicles have a plate but no vehicles row, so sessions reference plate_id directly and vehicle_id is
+nullable.
+ parking_sessions ↔ parking_slots: many sessions over time per slot, at most one ACTIVE. Enforce with
+a partial unique index: UNIQUE (slot_id) WHERE status='ACTIVE' AND slot_id IS NOT NULL. Also
+enforce one ACTIVE session per plate.
+ slot_occupancy_history: answers “how long was slot A3 occupied today” and heatmaps. Separate from
+sessions because a slot can be occupied by an unidentified vehicle.
+ detection_logs: an event/diagnostic log, sampled or partitioned by day, with a retention policy. Not a
+per-frame dump.
+ plate_hash: HMAC-SHA256 of the normalised plate with a server-side secret, used for lookups and
+uniqueness. plate_encrypted (AES-GCM) holds the real text; the UI shows plate_masked unless the role
+permits reveal.
+ Indexes: (plate_hash); sessions (status, entry_time); slots (slot_id, status); logs (camera_id, ts); violations
+(detected_at, status).
+
+===== PAGE 12 =====
+AI-Based Smart Parking Management System – Architecture
+Page 12
+E. API Architecture
+Base path /api/v1. All endpoints require Authorization: Bearer <JWT> except login.
+Auth
+Metho
+d
+Endpoint
+Purpose
+Request
+Response
+POST
+/auth/login
+Login
+{email, password}
+{access_token,
+refresh_token, role}
+POST
+/auth/refresh
+Rotate token
+{refresh_token}
+{access_token}
+GET
+/users/me
+Current user
+–
+user object
+POST
+/users (ADMIN)
+Create user
+{email, password, role}
+user
+Cameras
+Metho
+d
+Endpoint
+Purpose
+Request
+Response
+GET
+/cameras
+List cameras and health
+–
+[{id, name, role, status, fps,
+last_seen_at}]
+POST
+/cameras (ADMIN)
+Register camera
+{name, role, rtsp_url,
+lot_id}
+camera
+PATCH
+/cameras/{id}
+Update config
+partial
+camera
+POST
+/cameras/{id}/restart
+Restart pipeline
+–
+{status}
+GET
+/cameras/{id}/snapshot
+Latest frame
+(calibration)
+–
+JPEG
+GET
+/cameras/{id}/stream.mjpg
+Annotated live feed
+(MVP)
+–
+multipart MJPEG
+Slots
+Metho
+d
+Endpoint
+Purpose
+Request
+Response
+GET
+/slots?lot_id=&status;=&typ
+e;=
+List slots and status
+query
+[{id, code, status, type,
+polygon, session_id?}]
+POST
+/slots (ADMIN)
+Create slot
+{camera_id, code, polygon,
+type}
+slot
+PUT
+/slots/{id}/polygon
+Edit polygon
+{polygon}
+slot
+GET
+/lots/{id}/summary
+Counts
+–
+{total, occupied, available,
+reserved, unknown}
+Sessions and vehicles
+Metho
+d
+Endpoint
+Purpose
+Request
+Response
+GET
+/sessions?status=&plate;=&
+from;=&to;=&page;=
+History and active list
+query
+paginated sessions
+GET
+/sessions/{id}
+Detail with images and
+payment
+–
+session
+PATCH
+/sessions/{id}/plate
+(OPERATOR)
+Manual plate correction
+(audited)
+{plate}
+session
+POST
+/sessions/{id}/close
+(OPERATOR)
+Force close
+{reason}
+session
+GET
+/plates/search?q=
+Search plates
+query
+masked results
+GET/PO
+ST
+/vehicles
+Registered vehicles
+{plate, type, owner_id}
+vehicle
+Reservations, payments, violations
+
+===== PAGE 13 =====
+AI-Based Smart Parking Management System – Architecture
+Page 13
+Metho
+d
+Endpoint
+Purpose
+Request
+Response
+POST
+/reservations
+Reserve a slot
+{slot_id, vehicle_id, start,
+end}
+reservation
+GET
+/payments?status=&from;=
+&to;=
+List payments
+query
+list
+POST
+/payments/{id}/mark-paid
+Record manual payment
+{method, txn_ref}
+payment
+GET/PU
+T
+/tariffs, /tariffs/{id}
+Manage pricing
+rules JSON
+tariff
+GET
+/violations?status=&type;=
+List violations
+query
+list + evidence URLs
+PATCH
+/violations/{id}
+Acknowledge / resolve
+{status, note}
+violation
+Analytics and system
+Metho
+d
+Endpoint
+Purpose
+Request
+Response
+GET
+/stats/occupancy?from=&to
+;=&bucket;=hour
+Occupancy over time
+query
+time series
+GET
+/stats/revenue?from=&to;=
+&group;=day
+Revenue
+query
+series + totals
+GET
+/stats/duration
+Avg duration, peak
+hours
+–
+aggregates
+GET
+/audit-logs (ADMIN)
+Audit trail
+query
+paginated
+GET
+/health
+Liveness, DB, GPU,
+cameras
+–
+{db, gpu, cameras[]}
+WebSocket
+Endpoint
+Purpose
+WS /ws/live?token=
+One multiplexed channel for the dashboard (slot, summary, session, violation, camera events)
+WS /ws/cameras/{id}/overlay
+Optional per-camera boxes and tracks for canvas overlay: {ts, tracks:[{id, bbox, cls, plate?}]}
+{"type":"slot_update","slot_id":"A3","status":"OCCUPIED","since":"2026-09-28T10:14:02Z"}
+{"type":"summary","total":40,"occupied":23,"available":15,"reserved":2}
+{"type":"session_started","session_id":"...","plate_masked":"MH20**1234","entry_time":"..."}
+{"type":"session_completed","session_id":"...","duration_s":5210,"fee":60.00}
+{"type":"violation","id":"...","kind":"DISABLED_SLOT","slot_id":"D1","severity":"HIGH"}
+{"type":"camera_status","camera_id":"...","status":"OFFLINE"}
+Design note: send small JSON events over WebSocket and let the browser draw overlays on the video
+canvas. This is much cheaper than encoding boxes into the video, and it lets the UI toggle overlays and
+click on slots.
+
+===== PAGE 14 =====
+AI-Based Smart Parking Management System – Architecture
+Page 14
+F. AI Pipeline
+LOT camera inference loop
+frame → ROI mask → YOLO(vehicles) → ByteTrack → footprint calc
+      → slot assignment (overlap) → slot FSMs → state-change events
+      → violation rules → events
+GATE camera inference loop
+frame → YOLO(vehicles) → ByteTrack → zone/line logic
+      → for tracks in gate zone: plate detector (3–5 FPS)
+      → quality score → top-K crops → preprocess → OCR
+      → normalise → validate → multi-frame vote → PLATE_READ event
+Pretrained vs custom models
+Stage
+Initial approach
+Custom training?
+Vehicle detection
+Pretrained COCO YOLO (small/medium). Strong for
+cars, buses, trucks, motorcycles
+Only if your angle or local vehicles
+(auto-rickshaws) perform poorly; then fine-tune
+on 500–1500 labelled frames from your camera
+Tracking
+Built-in ByteTrack; no training
+No
+Slot occupancy
+Geometry + FSM; no ML
+Optional CNN slot classifier later
+Plate detection
+Train a custom small YOLO. COCO has no plate
+class. Use public plate datasets (Roboflow Universe,
+CCPD, regional sets) plus a few hundred frames from
+your own camera
+Yes – the one required custom model
+OCR
+Pretrained PaddleOCR/EasyOCR + plate-specific
+preprocessing and validation
+Fine-tune only if accuracy on your plates is
+under ~85–90%
+Violations
+Rules
+No
+Practical accuracy advice: most real-world ANPR errors come from image quality (blur, angle, glare,
+tiny plates), not the OCR model. Fix camera placement, shutter speed (fast, to avoid motion blur) and
+IR/lighting before fine-tuning anything. Multi-frame voting typically gives a larger gain than a better OCR
+model.
+Inference settings for RTX 4050 6 GB: FP16, imgsz=640 (or 960 for distant small vehicles), small or
+medium YOLO variant, inference every 2nd–3rd frame on the LOT camera (parked cars don't move fast), and
+TensorRT export once things work.
+Licensing: Ultralytics YOLO is AGPL-3.0 – fine for a student project. If you commercialise, buy the enterprise
+licence or use a permissively licensed detector. Verify current terms.
+
+===== PAGE 15 =====
+AI-Based Smart Parking Management System – Architecture
+Page 15
+G. Project Folder Structure
+Layered by responsibility, with the AI code free of any FastAPI/DB imports so it can be tested with plain video
+files.
+smart_parking/
+├── pyproject.toml
+├── docker-compose.yml               # postgres, redis (later), backend, frontend
+├── .env.example                     # secrets template (never commit .env)
+├── README.md
+├── main.py                          # entrypoint: starts API + pipeline manager
+│
+├── configs/
+│   ├── app.yaml                     # thresholds, FPS, debounce times
+│   ├── cameras.yaml                 # dev camera sources
+│   ├── slots/lot_a_cam1.json        # normalised polygons
+│   ├── gates/gate_cam1.json         # entry/exit lines, zones
+│   └── plate_formats.yaml           # per-country regex, char maps
+│
+├── src/smart_parking/
+│   ├── core/                        # shared types, no heavy imports
+│   │   ├── schemas.py               # Detection, Track, SlotState, Event
+│   │   ├── events.py                # event types + EventBus interface
+│   │   ├── config.py                # pydantic-settings loader
+│   │   └── logging.py
+│   ├── video/
+│   │   ├── grabber.py               # threaded latest-frame reader + reconnect
+│   │   ├── sources.py               # rtsp / webcam / file factories
+│   │   └── camera_manager.py
+│   ├── detection/
+│   │   ├── vehicle_detector.py      # YOLO wrapper (class filter, conf)
+│   │   └── plate_detector.py
+│   ├── tracking/
+│   │   ├── tracker.py               # ByteTrack/BoT-SORT wrapper
+│   │   └── track_state.py           # trajectory buffer, speed, stationary flag
+│   ├── parking/                     # geometry + occupancy (no DB)
+│   │   ├── geometry.py  slot_fsm.py  occupancy_engine.py
+│   │   ├── gate_logic.py            # line crossing, zones
+│   │   └── calibration.py           # polygon drawing tool
+│   ├── anpr/
+│   │   ├── quality.py  preprocess.py  validator.py  voter.py
+│   │   └── ocr/  base.py  paddle_engine.py  easyocr_engine.py
+│   ├── violations/  rules.py  engine.py
+│   ├── pipeline/    lot_pipeline.py  gate_pipeline.py  runner.py
+│   ├── services/                    # business logic (Parking Intelligence Engine)
+│   │   ├── session_service.py  slot_service.py  billing_service.py
+│   │   ├── violation_service.py
+│   │   └── event_consumer.py        # bus → services
+│   ├── db/  models.py  session.py  repositories/  migrations/ (Alembic)
+│   ├── api/
+│   │   ├── app.py  deps.py  ws.py  security.py
+│   │   └── routers/  schemas/
+│   └── utils/                       # crypto (plate encryption), time, image helpers
+│
+├── frontend/                        # React + TS + Vite
+│   └── src/{pages,components,hooks,api,store}/
+├── models/                          # weights (git-ignored / DVC)
+│   └── vehicle/  plate/  ocr/
+├── data/  samples/  datasets/  evidence/
+├── training/                        # plate detector fine-tuning, evaluation
+├── scripts/                         # run_demo, calibrate, export_tensorrt, benchmark
+├── tests/  unit/  integration/  fixtures/
+└── deploy/                          # Dockerfiles, nginx, systemd, k8s (later)
+Rule that keeps this manageable: parking/, anpr/, detection/ and tracking/ never import db/ or api/.
+Only services/ talks to both worlds.
+
+===== PAGE 16 =====
+AI-Based Smart Parking Management System – Architecture
+Page 16
+H. Development Roadmap
+Every phase is demoable by itself. Realistic total: roughly 14–18 weeks part-time.
+Phase 1 – Vehicle detection
+Build
+Video source abstraction (file/webcam/RTSP), YOLO wrapper, annotated display
+Technologies
+OpenCV, Ultralytics, PyTorch CUDA
+Expected output
+Video with boxes, class labels, confidence, FPS counter
+How to test
+Run on 3+ clips (day, night, angled); measure FPS; eyeball miss rate
+Complete before
+moving on
+≥15 FPS on a 1080p clip, few obvious misses, GPU actually used (torch.cuda.is_available())
+Phase 2 – Parking-slot definition
+Build
+Calibration tool to click polygons on a snapshot; save normalised JSON; overlay renderer
+Technologies
+OpenCV, Shapely
+Expected output
+slots.json and a video overlay of numbered slots
+How to test
+Unit-test point-in-polygon and overlap on synthetic boxes
+Complete before
+moving on
+Slots align with the real lot; config loads correctly at a different resolution
+Phase 3 – Occupancy
+Build
+Footprint overlap, slot FSM with debounce, summary counters
+Technologies
+Shapely, custom
+Expected output
+Green/red slots, “Free 12 / Occupied 28”
+How to test
+Unit-test FSM with scripted sequences (flicker, car passing). Hand-label ~100 frames and compute
+accuracy
+Complete before
+moving on
+≥95% slot accuracy on labelled frames; no flicker in a 5-minute clip
+Phase 4 – Tracking
+Build
+Integrate ByteTrack, trajectory buffer, stationary detection; feed stationary tracks into occupancy
+Technologies
+Ultralytics tracker
+Expected output
+Persistent IDs, trails
+How to test
+Count unique vehicles vs manual count; log ID switches
+Complete before
+moving on
+Count within ~5–10% of manual; IDs stable through brief occlusion
+Phase 5 – ANPR/OCR
+Build
+Train plate detector, quality scoring, preprocess, OCR wrapper, validator, voting. Evaluate offline
+on images first
+Technologies
+Custom YOLO, PaddleOCR/EasyOCR
+Expected output
+Plate text + confidence per vehicle track
+How to test
+200+ labelled plate crops: exact-match accuracy and character error rate; compare both OCR
+engines
+Complete before
+moving on
+≥85% exact match on your data; low-confidence cases routed to review
+
+===== PAGE 17 =====
+AI-Based Smart Parking Management System – Architecture
+Page 17
+Phase 6 – Entry/exit
+Build
+Gate lines/zones, direction logic, in-memory session state machine, track ↔ plate binding
+Technologies
+Shapely, custom
+Expected output
+Console log: “ENTER plate X at t1 … EXIT at t2, duration”
+How to test
+Scripted clips with known times; test jitter and re-entry
+Complete before
+moving on
+No duplicate events; durations within a few seconds of ground truth
+Phase 7 – Database
+Build
+SQLAlchemy models, Alembic migrations, repositories, event consumer, seed data
+Technologies
+PostgreSQL (SQLite for quick tests), SQLAlchemy
+Expected output
+Sessions/slots/violations persist across restarts
+How to test
+Repository tests; restart mid-clip and check no duplicate ACTIVE sessions
+Complete before
+moving on
+Schema migrates cleanly; constraints enforced
+Phase 8 – Backend
+Build
+FastAPI app, JWT auth + RBAC, REST routers, WebSocket hub, MJPEG stream, pipeline started from
+lifespan
+Technologies
+FastAPI, Pydantic, Uvicorn
+Expected output
+Swagger UI with working endpoints, live WS events
+How to test
+pytest TestClient, WS client script, Swagger/Postman
+Complete before
+moving on
+Core endpoints work; auth blocks unauthorised access; WS pushes slot changes within ~1 s
+Phase 9 – Dashboard
+Build
+Login, live view, slot map (SVG polygons colour-coded), counters, session table, alerts, revenue
+chart
+Technologies
+React, TypeScript, Vite, TanStack Query, Recharts
+Expected output
+Full operator UI
+How to test
+Manual E2E with a looping video; Playwright smoke tests
+Complete before
+moving on
+Full demo works from video → dashboard with no manual DB edits
+Phase 10 – Deployment
+Build
+Dockerise; Compose (Postgres + backend + frontend + nginx); HTTPS; env-based secrets; backups;
+monitoring; soak test
+Technologies
+Docker, nginx, Prometheus/Grafana (optional)
+Expected output
+One-command startup, 24-hour soak test
+How to test
+Kill camera, DB and GPU during a run and verify failure handling
+Complete before
+moving on
+Runs 24 h without leaks or crashes; documented recovery
+Deliberate adjustments to the requested order
+ Do tracking (4) before finalising occupancy in production use: stationary-track gating dramatically
+reduces false “occupied” from passing cars. Prototype occupancy in Phase 3 with plain overlap, then
+upgrade it in Phase 4.
+ Evaluate ANPR offline on saved images in Phase 5 before wiring it into video. It is the riskiest part, so
+find out early whether your camera setup can support it.
+
+===== PAGE 18 =====
+AI-Based Smart Parking Management System – Architecture
+Page 18
+I. MVP vs Advanced Version
+MVP (a strong final-year project)
+ 1 lot camera and optionally 1 gate camera (or one video covering both)
+ Pretrained YOLO for vehicles, ByteTrack, polygon slots with the debounce FSM
+ Custom small plate detector + PaddleOCR/EasyOCR with regex validation and multi-frame voting
+ Entry/exit lines and sessions with duration
+ Simple time-based fee calculation (free minutes + hourly rate), displayed but not charged online
+ Three violation types: unauthorised vehicle in disabled/reserved slot, double parking / straddling lines,
+overstay
+ PostgreSQL, FastAPI (REST + one WebSocket), MJPEG live feed
+ React dashboard: live feed, slot map, counters, active sessions, history, basic revenue chart, alerts
+ JWT auth with 2–3 roles, Docker Compose
+Advanced / production version
+ Multi-camera, multi-lot with per-camera worker processes, Redis Streams, and a GPU inference queue
+ Cross-camera vehicle re-identification (appearance ReID + plate handoff); BoT-SORT with ReID and
+camera-motion compensation
+ Slot-crop CNN as a second occupancy opinion; day/night models; domain adaptation
+ Payment gateway (UPI/cards) with webhooks and receipts; reservations with pre-booking; mobile app;
+barrier-gate control
+ Edge devices (Jetson) plus central server; OTA model updates; WebRTC low-latency video (MediaMTX);
+multi-tenant support
+ Model monitoring and drift detection; active-learning loop (uncertain frames → labelling → retraining)
+ Prometheus/Grafana/Loki observability, HA Postgres, S3-compatible evidence storage with retention/legal
+hold
+ Wrong-way driving, speeding and blocked-exit detection
+Do NOT build initially
+Skip
+Why
+Cross-camera vehicle Re-ID
+Hardest problem in the system; can consume the whole project. Use plates at the gate and
+occupancy on the lot camera; accept session.slot_id = NULL when the link is uncertain
+Payment gateway integration
+Compliance, webhooks and testing overhead with zero AI value. Compute fees and mark
+paid manually
+Native mobile app
+A responsive React PWA covers it
+Microservices / Kubernetes
+A modular monolith with clean interfaces is enough; Kubernetes is unneeded operational
+overhead
+Custom vehicle detector
+training
+Pretrained COCO is already strong; fine-tune only after measuring a specific failure
+Training your own OCR from
+scratch
+Tune preprocessing and voting first
+WebRTC/HLS pipeline
+MJPEG is enough for a demo
+Vehicle make/model/colour
+recognition
+Nice extra, not needed for the core requirements
+Slot-classification CNN
+Geometry + FSM is enough; add only if occlusion errors persist
+Refund/dispute workflows
+Business complexity, not ML
+Multi-tenant SaaS
+The schema has lot_id, which is all you need for now
+
+===== PAGE 19 =====
+AI-Based Smart Parking Management System – Architecture
+Page 19
+J. Technology Selection and Trade-offs
+YOLO versions
+Option
+Strengths
+Weaknesses
+Recommendation
+YOLOv8
+(Ultralytics)
+Very mature, huge community, easy
+tracking/export
+Older architecture
+Safe fallback
+YOLO11 or newer
+Ultralytics
+Better accuracy/efficiency at similar
+cost, same API
+Slightly less community lore
+Use the newest stable
+Ultralytics release; switching
+is a one-line change
+YOLOX / RT-DETR
+Permissive licences (check specifics)
+Less convenient tooling;
+manual tracking integration
+Consider for commercial
+licensing
+Size choice
+n = fastest but misses small/distant
+cars; s = best balance on RTX 4050;
+m = more accurate, slower
+–
+Start with s, benchmark m
+ByteTrack vs BoT-SORT
+ByteTrack
+BoT-SORT
+Method
+Kalman + IoU; second pass uses low-confidence
+detections
+Adds camera-motion compensation and optional
+ReID appearance
+Speed
+Faster, lighter
+Slower, especially with ReID
+Robust to
+Occlusion via low-confidence recovery
+Camera shake, crowds of similar-looking objects
+Fit here
+Fixed CCTV, mostly slow vehicles
+Helpful for shaky/PTZ cameras or gate re-association
+Choice: ByteTrack first (static cameras, speed matters). Move to BoT-SORT with ReID if ID switches appear
+in your metrics.
+PaddleOCR vs EasyOCR
+PaddleOCR
+EasyOCR
+Accuracy on plates
+Generally better and faster
+Decent; more often confused by small/blurry text
+Setup on Windows
+Can be painful (paddlepaddle GPU wheels, CUDA
+matching); CPU build is easy
+Easy (pure PyTorch, shares your environment)
+GPU memory
+Extra framework alongside PyTorch
+Reuses PyTorch
+Speed
+Fast
+Slower per crop
+Choice: hide OCR behind OCREngine and benchmark both on your own plate crops. Plate OCR only
+runs a few crops per vehicle, so PaddleOCR on CPU is acceptable and avoids CUDA conflicts on Windows.
+SQLite vs PostgreSQL
+SQLite
+PostgreSQL
+Setup
+Zero
+Docker one-liner
+Concurrency
+Single writer; AI worker and API will contend
+Full concurrent writes
+Constraints
+Limited partial unique indexes
+Partial indexes, JSONB, partitioning, row-level security
+Scaling
+None
+Replication, partitioning, TimescaleDB extension
+Choice: PostgreSQL from the start (via Docker). With SQLAlchemy + Alembic, SQLite remains a fallback
+for quick unit tests, but test constraints like “one ACTIVE session per plate” on Postgres.
+FastAPI vs Flask
+FastAPI
+Flask
+Async and
+WebSockets
+Native
+Bolt-on extensions
+Validation and docs
+Pydantic + automatic OpenAPI/Swagger
+Manual
+
+===== PAGE 20 =====
+AI-Based Smart Parking Management System – Architecture
+Page 20
+FastAPI
+Flask
+Performance
+Higher for I/O-bound work
+Adequate for simple apps
+Choice: FastAPI – real-time push, typed schemas and free Swagger docs matter here.
+React vs PySide6
+React (web)
+PySide6 (desktop)
+Remote access
+Any browser/phone, multiple operators
+Local machine only
+Live map/charts
+Rich ecosystem
+Doable, slower for modern UIs
+Fit with architecture
+Matches the API/WS design and deployment story
+Couples UI to the Python process
+Learning curve
+Higher if you don't know JS
+Lower for Python-only developers
+Choice: React (TypeScript + Vite). If you truly cannot spend time on JS, Streamlit/Gradio is a weaker but
+faster fallback; PySide6 only makes sense for a standalone kiosk.
+Local vs cloud processing
+Local / on-prem (edge)
+Cloud
+Latency
+Low
+Depends on network
+Bandwidth
+None
+Continuous video upload is expensive
+Privacy
+Video and plates stay on-site
+Plate data leaves premises (compliance risk)
+Resilience
+Works when internet is down
+Fails without network
+Cost
+Upfront hardware
+Ongoing GPU rental
+Choice: process locally; use the cloud only for aggregated data (dashboards, remote admin, backups of
+events, not video).
+
+===== PAGE 21 =====
+AI-Based Smart Parking Management System – Architecture
+Page 21
+Hardware
+Development (your laptop)
+Resource
+Assessment
+RTX 4050 6 GB
+Enough for 1–2 streams at 720p–1080p with a small YOLO in FP16 at roughly 15–30 FPS inference.
+Benchmark it yourself
+6 GB VRAM budget
+Vehicle model + plate model + tracker fit comfortably. Avoid running large models plus PaddleOCR GPU
+at the same time
+16 GB RAM
+Fine. Close browser tabs; run Postgres in Docker with limited memory
+Windows 11
+Install the PyTorch CUDA build first. RTSP via OpenCV/FFMPEG; Docker Desktop (WSL2). Prefer CPU
+Paddle or EasyOCR. Consider WSL2 for a Linux-like environment
+Tips
+Frame skipping, imgsz=640, FP16, TensorRT export, hard-cap FPS per camera
+Real-world deployment (estimates – benchmark before buying)
+Scale
+Cameras
+Suggested compute
+Notes
+Small lot
+1–4
+One edge box: Jetson Orin NX/AGX or mini-PC with RTX
+3050/4060-class GPU, 16–32 GB RAM
+Infer at 5–10 FPS per camera
+(parked cars are slow)
+Medium
+5–16
+Server with RTX 4070/4080 or NVIDIA L4/A2000-class
+GPU, 32–64 GB RAM, NVMe SSD; TensorRT + batched
+inference
+Shared inference queue across
+cameras
+Large
+16+
+Multiple GPU nodes or several edge boxes per zone;
+central Postgres server, Redis, object storage
+Horizontal scaling by camera group
+Camera hardware
+Recommendation
+Lot cameras
+1080p–4K IP cameras, H.264/H.265, mounted high with an angled view; ~15–30 slots per camera
+depending on angle
+Gate/ANPR cameras
+Dedicated, varifocal lens, fast shutter (≥1/1000 s), IR illumination, plate ≥100–150 px wide at the
+read point. Matters more than any software tweak
+Network
+PoE switches, dedicated camera VLAN, wired gigabit
+Power/uptime
+UPS for server and switch
+Storage
+Store evidence (crops/snapshots), not continuous video, unless required
+
+===== PAGE 22 =====
+AI-Based Smart Parking Management System – Architecture
+Page 22
+Scalability Design
+Stage
+Setup
+What changes
+1. One camera, 20–50
+slots
+One process: FastAPI + pipeline
+thread(s), in-memory bus, Postgres in
+Docker
+Baseline
+2. Several cameras,
+100+ slots
+AI workers as separate processes (one
+per camera or group)
+(1) Swap in-memory EventBus for Redis Streams (same
+interface). (2) Workers read camera config from DB and
+write to the bus. (3) Batch frames from multiple cameras
+to one GPU or dedicate a GPU per group
+3. Multiple lots
+Per-site edge workers syncing events to
+a central server
+lot_id already exists; add per-lot config, Postgres
+partitioning/read replicas
+The scaling lever is camera count per worker. Everything else (API, DB, dashboard) scales conventionally.
+
+===== PAGE 23 =====
+AI-Based Smart Parking Management System – Architecture
+Page 23
+Security
+Area
+Measures
+Authentication
+JWT access tokens (15 min) + rotated, revocable refresh tokens; Argon2/bcrypt hashes; optional
+TOTP MFA for admins; login rate limiting and lockout
+RBAC
+ADMIN (config, users, cameras, tariffs), OPERATOR (sessions, corrections, violations, payments),
+VIEWER (read-only), CUSTOMER (own vehicles/reservations). Enforce with FastAPI dependencies on
+every router plus object-level checks for customers
+API security
+HTTPS/TLS only, strict CORS allow-list, Pydantic validation, rate limiting (e.g. slowapi), pagination
+caps, no stack traces in responses, security headers, dependency scanning, short-lived WS token
+Camera access
+RTSP credentials stored encrypted (never in git or logs); cameras on an isolated VLAN with no
+internet; only the AI worker can reach them; unique credentials per camera; browsers never receive
+RTSP URLs, only your relayed stream; change default passwords, disable UPnP
+Database
+Least-privilege DB users (app cannot DROP), TLS in transit, encrypted volume, no public port,
+parameterised queries only (SQLAlchemy), automated encrypted backups with restore tests, secrets
+in env/secret manager
+License-plate data
+(personal data)
+Encrypt plate text at rest (AES-GCM) with HMAC hash for lookup; mask in UI by default
+(MH20**1234), reveal only for authorised roles and audit each reveal; short retention (e.g. evidence
+30 days); collect only what is needed; document lawful basis and follow local privacy law (e.g. India's
+DPDP Act, GDPR if applicable); signage at the lot
+Evidence files
+Stored outside web root, served through signed short-lived URLs, access-checked by role
+Logging and auditing
+Append-only audit_logs for logins, plate corrections, force-closes, config changes, plate reveals,
+violation dismissals (who, what, when, IP). Structured JSON app logs with correlation IDs; no plates or
+passwords in logs
+Model/pipeline integrity
+Verify model file hashes, pin dependency versions, never load arbitrary uploaded weights
+
+===== PAGE 24 =====
+AI-Based Smart Parking Management System – Architecture
+Page 24
+Failure Handling
+Failure
+Detection
+Behaviour
+Recovery
+Camera
+disconnects
+No frame for N s /
+read error
+Mark camera OFFLINE; set its slots to
+UNKNOWN (not FREE/OCCUPIED) after a
+grace period; alert; keep sessions ACTIVE
+Reconnect with exponential backoff
+(1→2→4…30 s); re-run a ~10 s
+stabilisation window before trusting
+slot states; reconcile with last known
+state
+OCR fails / low
+confidence
+Confidence below
+threshold or regex
+fails after voting
+Create session with plate=NULL, status
+NEEDS_REVIEW, save best crops; operator
+gets a review task. Temporary ID
+(UNK-<timestamp>) so duration is still
+tracked
+Operator corrects via PATCH
+/sessions/{id}/plate (audited). Log
+failures to build a retraining set
+Vehicle detection
+fails / misses
+Sudden drop in
+detections; track
+vanishes mid-slot
+Tracker coasts through short gaps; FSM's 8 s
+free-timer plus occlusion rule prevents false
+FREE; a session isn't closed on a single
+missed frame
+Low-confidence retry pass; alert if
+detection rate stays abnormally low
+(dirty lens, night failure)
+Multiple vehicles
+overlap
+Overlapping
+boxes, ID switches
+ByteTrack low-confidence association;
+footprint overlap reduces angle errors; one
+vehicle → one slot; ambiguity gets
+UNCERTAIN flag; ANPR waits for a frame
+where the plate is visible
+Wait for separation; track-level dedupe
+on gate lines; vote across more frames
+Network: camera
+↔ server
+Frame timeouts
+Same as camera disconnect
+Same
+Network:
+dashboard ↔
+backend
+WS close
+UI shows “reconnecting” banner,
+auto-reconnects with backoff; then fetches
+full /lots/{id}/summary + /slots snapshot
+and resumes deltas
+No data loss – state lives on the server
+Internet down
+(cloud features)
+Health check
+Core is local, so operation continues; queue
+outbound sync/notification jobs
+Retry queue drains on recovery
+Database
+unavailable
+Connection errors
+on write
+AI keeps running; events go to a local
+durable buffer (disk-backed queue / SQLite
+WAL / Redis Stream) with alert; API returns
+503 for writes and serves cached slot state
+for reads
+Auto-reconnect with circuit breaker;
+replay buffered events in order using
+idempotency keys (camera_id +
+track_id + event_type + ts) so replay
+never duplicates sessions
+GPU unavailable
+/ CUDA OOM
+CUDA error, OOM,
+driver reset
+Catch and log; reduce load (lower
+FPS/imgsz, skip frames) and retry; if GPU is
+gone, fall back to CPU at reduced FPS for
+occupancy-only mode (ANPR paused,
+flagged degraded); /health reports gpu:false
+Auto-restart pipeline when GPU
+returns; watchdog restarts crashed
+workers
+Worker crash
+Heartbeat missing
+Supervisor (systemd / Docker restart policy)
+restarts it; cameras show DEGRADED
+Rebuild in-memory bindings from
+ACTIVE sessions in DB and stabilise
+before emitting new events
+Duplicate /
+missed exit
+Same plate has
+two ACTIVE
+sessions, or
+implausibly long
+session
+Flag as anomaly; auto-close older session as
+ABANDONED/NEEDS_REVIEW; alert
+Operator review
+Clock / timezone
+problems
+–
+Store UTC (timestamptz), convert in the UI
+per lot timezone, NTP-sync all machines
+–
+Principle: when uncertain, degrade gracefully into UNKNOWN / NEEDS_REVIEW. Never silently guess in
+ways that create wrong fees or false violations.
+
+===== PAGE 25 =====
+AI-Based Smart Parking Management System – Architecture
+Page 25
+Violation Detection (practical rules)
+Violation
+Rule
+Practical?
+Disabled/reserved slot without
+authorisation
+Slot type DISABLED/RESERVED is OCCUPIED (debounced)
+and the bound plate is not whitelisted/reserved for it
+Yes (MVP). Needs a plate bound
+to the slot; otherwise it can only
+flag “occupied by unknown”
+Double parking / straddling lines
+One vehicle footprint has ≥0.2 overlap on two slots, or a
+stationary vehicle sits outside any slot in the aisle zone
+Yes (MVP)
+Parking outside designated slot
+Stationary >T seconds, footprint inside lot ROI but overlap
+with every slot <0.3
+Yes (MVP)
+Overstay
+ACTIVE session duration > tariff max or reservation end
+Yes – pure business logic
+Unauthorised parking
+Plate is blacklisted, or not registered in a members-only
+lot
+Yes, if ANPR is reliable
+Wrong parking (wrong slot type,
+e.g. truck in car slot)
+Vehicle class vs slot type mismatch
+Yes, cheap
+Wrong-way driving, blocking
+exits
+Trajectory direction / dwell in zone
+Advanced
+Each violation needs a dwell time (e.g. must persist 30–60 s) plus evidence snapshots before raising an
+alert; otherwise you will drown operators in false alarms.
+
+===== PAGE 26 =====
+AI-Based Smart Parking Management System – Architecture
+Page 26
+Recommended Architecture: Summary and Rationale
+Recommended stack: Python 3.11, PyTorch, Ultralytics YOLO (pretrained vehicles + custom plate
+detector), ByteTrack, OpenCV + Shapely, PaddleOCR/EasyOCR behind an interface, FastAPI,
+SQLAlchemy/Alembic, PostgreSQL, React + TypeScript, Docker Compose, all processed locally.
+Decision
+Why
+Modular monolith with interfaces (EventBus,
+OCREngine, repositories)
+Manageable for one student, yet each piece can later move to its own
+process without rewriting logic
+Event-based AI → services flow
+AI layer stays testable on plain video files; replay, buffering and
+idempotency come almost free
+Latest-frame-only grabbing
+Real-time systems must drop frames, not queue them, or the dashboard
+drifts seconds behind reality
+Track-then-decide occupancy (stationary +
+debounce FSM, asymmetric timers)
+Solves flicker and passing-car false positives while biasing toward never
+falsely freeing a slot
+ANPR only at the gate, only on best frames
+Plate reading needs close, sharp, slow images; also cuts GPU load
+dramatically
+Plate is the durable identity, track ID is not
+Track IDs are per-camera and temporary; a plate survives track loss,
+restarts and camera changes
+Two camera roles
+Avoids the unrealistic goal of reading plates from a wide lot view; matches
+real systems
+NEEDS_REVIEW and UNKNOWN states
+everywhere
+Honest uncertainty beats wrong fees and wrong violations
+Postgres with constraints (one ACTIVE session
+per plate/slot)
+The database is the last line of defence against logic bugs
+Encrypted plates + HMAC lookup + masked UI +
+audited reveals
+Plates are personal data; cheap to build in from day one, painful to retrofit
+WebSocket for deltas, REST for snapshots
+Instant dashboard updates plus simple, reliable recovery after reconnects
+Local processing, cloud only for aggregates
+Lower latency, works offline, keeps video and plates on-site
+Pretrained first, custom only for plates
+The plate detector is the only true gap in COCO; spend labelling effort
+there
+Suggested immediate next steps
+ Record or download 3–5 parking videos (day/night, angled) and one gate/entrance clip.
+ Complete Phases 1–3 in about 2–3 weeks. This alone is already a demoable “smart slot occupancy”
+system.
+ Start collecting and labelling plate images early – Phase 5's data work is the slowest.
+ Write the event schemas (core/schemas.py and core/events.py) before any service code; everything else
+hangs off them.

@@ -1,0 +1,6162 @@
+[
+  {
+    "file": "w030_MH20AB1234_clean.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 30,
+    "car_box": [
+      197,
+      154,
+      299,
+      271
+    ],
+    "plate_rect": [
+      233,
+      246,
+      263,
+      259
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_MH20AB1234_blur.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 30,
+    "car_box": [
+      188,
+      152,
+      290,
+      269
+    ],
+    "plate_rect": [
+      224,
+      244,
+      254,
+      257
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_MH20AB1234_noise.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 30,
+    "car_box": [
+      197,
+      148,
+      299,
+      265
+    ],
+    "plate_rect": [
+      233,
+      240,
+      263,
+      253
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_MH20AB1234_compressed.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 30,
+    "car_box": [
+      196,
+      145,
+      298,
+      262
+    ],
+    "plate_rect": [
+      232,
+      237,
+      262,
+      250
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_MH20AB1234_tilt.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 30,
+    "car_box": [
+      194,
+      159,
+      296,
+      276
+    ],
+    "plate_rect": [
+      230,
+      251,
+      260,
+      264
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TS09DP4567_clean.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 30,
+    "car_box": [
+      193,
+      156,
+      295,
+      273
+    ],
+    "plate_rect": [
+      229,
+      248,
+      259,
+      261
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TS09DP4567_blur.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 30,
+    "car_box": [
+      187,
+      152,
+      289,
+      269
+    ],
+    "plate_rect": [
+      223,
+      244,
+      253,
+      257
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TS09DP4567_noise.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 30,
+    "car_box": [
+      199,
+      154,
+      301,
+      271
+    ],
+    "plate_rect": [
+      235,
+      246,
+      265,
+      259
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TS09DP4567_compressed.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 30,
+    "car_box": [
+      194,
+      149,
+      296,
+      266
+    ],
+    "plate_rect": [
+      230,
+      241,
+      260,
+      254
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TS09DP4567_tilt.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 30,
+    "car_box": [
+      187,
+      157,
+      289,
+      274
+    ],
+    "plate_rect": [
+      223,
+      249,
+      253,
+      262
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_DL12CD8901_clean.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 30,
+    "car_box": [
+      195,
+      159,
+      297,
+      276
+    ],
+    "plate_rect": [
+      231,
+      251,
+      261,
+      264
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_DL12CD8901_blur.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 30,
+    "car_box": [
+      180,
+      146,
+      282,
+      263
+    ],
+    "plate_rect": [
+      216,
+      238,
+      246,
+      251
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_DL12CD8901_noise.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 30,
+    "car_box": [
+      191,
+      148,
+      293,
+      265
+    ],
+    "plate_rect": [
+      227,
+      240,
+      257,
+      253
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_DL12CD8901_compressed.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 30,
+    "car_box": [
+      198,
+      157,
+      300,
+      274
+    ],
+    "plate_rect": [
+      234,
+      249,
+      264,
+      262
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_DL12CD8901_tilt.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 30,
+    "car_box": [
+      180,
+      157,
+      282,
+      274
+    ],
+    "plate_rect": [
+      216,
+      249,
+      246,
+      262
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_KA01MN2345_clean.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 30,
+    "car_box": [
+      199,
+      155,
+      301,
+      272
+    ],
+    "plate_rect": [
+      235,
+      247,
+      265,
+      260
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_KA01MN2345_blur.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 30,
+    "car_box": [
+      189,
+      153,
+      291,
+      270
+    ],
+    "plate_rect": [
+      225,
+      245,
+      255,
+      258
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_KA01MN2345_noise.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 30,
+    "car_box": [
+      194,
+      157,
+      296,
+      274
+    ],
+    "plate_rect": [
+      230,
+      249,
+      260,
+      262
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_KA01MN2345_compressed.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 30,
+    "car_box": [
+      198,
+      150,
+      300,
+      267
+    ],
+    "plate_rect": [
+      234,
+      242,
+      264,
+      255
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_KA01MN2345_tilt.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 30,
+    "car_box": [
+      191,
+      150,
+      293,
+      267
+    ],
+    "plate_rect": [
+      227,
+      242,
+      257,
+      255
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_GJ18BB5678_clean.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 30,
+    "car_box": [
+      198,
+      148,
+      300,
+      265
+    ],
+    "plate_rect": [
+      234,
+      240,
+      264,
+      253
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_GJ18BB5678_blur.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 30,
+    "car_box": [
+      184,
+      156,
+      286,
+      273
+    ],
+    "plate_rect": [
+      220,
+      248,
+      250,
+      261
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_GJ18BB5678_noise.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 30,
+    "car_box": [
+      195,
+      149,
+      297,
+      266
+    ],
+    "plate_rect": [
+      231,
+      241,
+      261,
+      254
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_GJ18BB5678_compressed.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 30,
+    "car_box": [
+      177,
+      155,
+      279,
+      272
+    ],
+    "plate_rect": [
+      213,
+      247,
+      243,
+      260
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_GJ18BB5678_tilt.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 30,
+    "car_box": [
+      186,
+      149,
+      288,
+      266
+    ],
+    "plate_rect": [
+      222,
+      241,
+      252,
+      254
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TN09AX1122_clean.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 30,
+    "car_box": [
+      189,
+      146,
+      291,
+      263
+    ],
+    "plate_rect": [
+      225,
+      238,
+      255,
+      251
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TN09AX1122_blur.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 30,
+    "car_box": [
+      197,
+      151,
+      299,
+      268
+    ],
+    "plate_rect": [
+      233,
+      243,
+      263,
+      256
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TN09AX1122_noise.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 30,
+    "car_box": [
+      177,
+      155,
+      279,
+      272
+    ],
+    "plate_rect": [
+      213,
+      247,
+      243,
+      260
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TN09AX1122_compressed.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 30,
+    "car_box": [
+      192,
+      157,
+      294,
+      274
+    ],
+    "plate_rect": [
+      228,
+      249,
+      258,
+      262
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_TN09AX1122_tilt.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 30,
+    "car_box": [
+      199,
+      144,
+      301,
+      261
+    ],
+    "plate_rect": [
+      235,
+      236,
+      265,
+      249
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_23AH1234_clean.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 30,
+    "car_box": [
+      179,
+      147,
+      281,
+      264
+    ],
+    "plate_rect": [
+      215,
+      239,
+      245,
+      252
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_23AH1234_blur.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 30,
+    "car_box": [
+      190,
+      158,
+      292,
+      275
+    ],
+    "plate_rect": [
+      226,
+      250,
+      256,
+      263
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_23AH1234_noise.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 30,
+    "car_box": [
+      198,
+      146,
+      300,
+      263
+    ],
+    "plate_rect": [
+      234,
+      238,
+      264,
+      251
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_23AH1234_compressed.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 30,
+    "car_box": [
+      198,
+      151,
+      300,
+      268
+    ],
+    "plate_rect": [
+      234,
+      243,
+      264,
+      256
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_23AH1234_tilt.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 30,
+    "car_box": [
+      178,
+      144,
+      280,
+      261
+    ],
+    "plate_rect": [
+      214,
+      236,
+      244,
+      249
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_UP16AB7788_clean.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 30,
+    "car_box": [
+      179,
+      149,
+      281,
+      266
+    ],
+    "plate_rect": [
+      215,
+      241,
+      245,
+      254
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_UP16AB7788_blur.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 30,
+    "car_box": [
+      186,
+      146,
+      288,
+      263
+    ],
+    "plate_rect": [
+      222,
+      238,
+      252,
+      251
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_UP16AB7788_noise.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 30,
+    "car_box": [
+      180,
+      155,
+      282,
+      272
+    ],
+    "plate_rect": [
+      216,
+      247,
+      246,
+      260
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_UP16AB7788_compressed.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 30,
+    "car_box": [
+      182,
+      151,
+      284,
+      268
+    ],
+    "plate_rect": [
+      218,
+      243,
+      248,
+      256
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w030_UP16AB7788_tilt.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 30,
+    "car_box": [
+      200,
+      152,
+      302,
+      269
+    ],
+    "plate_rect": [
+      236,
+      244,
+      266,
+      257
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_MH20AB1234_clean.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 45,
+    "car_box": [
+      165,
+      123,
+      318,
+      303
+    ],
+    "plate_rect": [
+      219,
+      271,
+      264,
+      291
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_MH20AB1234_blur.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 45,
+    "car_box": [
+      167,
+      127,
+      320,
+      307
+    ],
+    "plate_rect": [
+      221,
+      275,
+      266,
+      295
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_MH20AB1234_noise.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 45,
+    "car_box": [
+      154,
+      124,
+      307,
+      304
+    ],
+    "plate_rect": [
+      208,
+      272,
+      253,
+      292
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_MH20AB1234_compressed.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 45,
+    "car_box": [
+      164,
+      122,
+      317,
+      302
+    ],
+    "plate_rect": [
+      218,
+      270,
+      263,
+      290
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_MH20AB1234_tilt.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 45,
+    "car_box": [
+      168,
+      113,
+      321,
+      293
+    ],
+    "plate_rect": [
+      222,
+      261,
+      267,
+      281
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TS09DP4567_clean.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 45,
+    "car_box": [
+      174,
+      121,
+      327,
+      301
+    ],
+    "plate_rect": [
+      228,
+      269,
+      273,
+      289
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TS09DP4567_blur.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 45,
+    "car_box": [
+      164,
+      126,
+      317,
+      306
+    ],
+    "plate_rect": [
+      218,
+      274,
+      263,
+      294
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TS09DP4567_noise.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 45,
+    "car_box": [
+      154,
+      123,
+      307,
+      303
+    ],
+    "plate_rect": [
+      208,
+      271,
+      253,
+      291
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TS09DP4567_compressed.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 45,
+    "car_box": [
+      155,
+      118,
+      308,
+      298
+    ],
+    "plate_rect": [
+      209,
+      266,
+      254,
+      286
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TS09DP4567_tilt.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 45,
+    "car_box": [
+      153,
+      117,
+      306,
+      297
+    ],
+    "plate_rect": [
+      207,
+      265,
+      252,
+      285
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_DL12CD8901_clean.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 45,
+    "car_box": [
+      170,
+      124,
+      323,
+      304
+    ],
+    "plate_rect": [
+      224,
+      272,
+      269,
+      292
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_DL12CD8901_blur.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 45,
+    "car_box": [
+      161,
+      127,
+      314,
+      307
+    ],
+    "plate_rect": [
+      215,
+      275,
+      260,
+      295
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_DL12CD8901_noise.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 45,
+    "car_box": [
+      175,
+      121,
+      328,
+      301
+    ],
+    "plate_rect": [
+      229,
+      269,
+      274,
+      289
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_DL12CD8901_compressed.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 45,
+    "car_box": [
+      170,
+      112,
+      323,
+      292
+    ],
+    "plate_rect": [
+      224,
+      260,
+      269,
+      280
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_DL12CD8901_tilt.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 45,
+    "car_box": [
+      159,
+      115,
+      312,
+      295
+    ],
+    "plate_rect": [
+      213,
+      263,
+      258,
+      283
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_KA01MN2345_clean.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 45,
+    "car_box": [
+      175,
+      125,
+      328,
+      305
+    ],
+    "plate_rect": [
+      229,
+      273,
+      274,
+      293
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_KA01MN2345_blur.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 45,
+    "car_box": [
+      160,
+      123,
+      313,
+      303
+    ],
+    "plate_rect": [
+      214,
+      271,
+      259,
+      291
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_KA01MN2345_noise.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 45,
+    "car_box": [
+      153,
+      122,
+      306,
+      302
+    ],
+    "plate_rect": [
+      207,
+      270,
+      252,
+      290
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_KA01MN2345_compressed.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 45,
+    "car_box": [
+      164,
+      116,
+      317,
+      296
+    ],
+    "plate_rect": [
+      218,
+      264,
+      263,
+      284
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_KA01MN2345_tilt.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 45,
+    "car_box": [
+      170,
+      121,
+      323,
+      301
+    ],
+    "plate_rect": [
+      224,
+      269,
+      269,
+      289
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_GJ18BB5678_clean.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 45,
+    "car_box": [
+      156,
+      117,
+      309,
+      297
+    ],
+    "plate_rect": [
+      210,
+      265,
+      255,
+      285
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_GJ18BB5678_blur.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 45,
+    "car_box": [
+      162,
+      117,
+      315,
+      297
+    ],
+    "plate_rect": [
+      216,
+      265,
+      261,
+      285
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_GJ18BB5678_noise.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 45,
+    "car_box": [
+      162,
+      121,
+      315,
+      301
+    ],
+    "plate_rect": [
+      216,
+      269,
+      261,
+      289
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_GJ18BB5678_compressed.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 45,
+    "car_box": [
+      162,
+      120,
+      315,
+      300
+    ],
+    "plate_rect": [
+      216,
+      268,
+      261,
+      288
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_GJ18BB5678_tilt.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 45,
+    "car_box": [
+      164,
+      127,
+      317,
+      307
+    ],
+    "plate_rect": [
+      218,
+      275,
+      263,
+      295
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TN09AX1122_clean.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 45,
+    "car_box": [
+      156,
+      112,
+      309,
+      292
+    ],
+    "plate_rect": [
+      210,
+      260,
+      255,
+      280
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TN09AX1122_blur.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 45,
+    "car_box": [
+      174,
+      126,
+      327,
+      306
+    ],
+    "plate_rect": [
+      228,
+      274,
+      273,
+      294
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TN09AX1122_noise.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 45,
+    "car_box": [
+      170,
+      118,
+      323,
+      298
+    ],
+    "plate_rect": [
+      224,
+      266,
+      269,
+      286
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TN09AX1122_compressed.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 45,
+    "car_box": [
+      163,
+      119,
+      316,
+      299
+    ],
+    "plate_rect": [
+      217,
+      267,
+      262,
+      287
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_TN09AX1122_tilt.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 45,
+    "car_box": [
+      153,
+      121,
+      306,
+      301
+    ],
+    "plate_rect": [
+      207,
+      269,
+      252,
+      289
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_23AH1234_clean.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 45,
+    "car_box": [
+      167,
+      118,
+      320,
+      298
+    ],
+    "plate_rect": [
+      221,
+      266,
+      266,
+      286
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_23AH1234_blur.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 45,
+    "car_box": [
+      174,
+      116,
+      327,
+      296
+    ],
+    "plate_rect": [
+      228,
+      264,
+      273,
+      284
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_23AH1234_noise.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 45,
+    "car_box": [
+      174,
+      125,
+      327,
+      305
+    ],
+    "plate_rect": [
+      228,
+      273,
+      273,
+      293
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_23AH1234_compressed.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 45,
+    "car_box": [
+      171,
+      119,
+      324,
+      299
+    ],
+    "plate_rect": [
+      225,
+      267,
+      270,
+      287
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_23AH1234_tilt.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 45,
+    "car_box": [
+      156,
+      126,
+      309,
+      306
+    ],
+    "plate_rect": [
+      210,
+      274,
+      255,
+      294
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_UP16AB7788_clean.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 45,
+    "car_box": [
+      167,
+      115,
+      320,
+      295
+    ],
+    "plate_rect": [
+      221,
+      263,
+      266,
+      283
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_UP16AB7788_blur.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 45,
+    "car_box": [
+      165,
+      124,
+      318,
+      304
+    ],
+    "plate_rect": [
+      219,
+      272,
+      264,
+      292
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_UP16AB7788_noise.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 45,
+    "car_box": [
+      153,
+      124,
+      306,
+      304
+    ],
+    "plate_rect": [
+      207,
+      272,
+      252,
+      292
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_UP16AB7788_compressed.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 45,
+    "car_box": [
+      169,
+      118,
+      322,
+      298
+    ],
+    "plate_rect": [
+      223,
+      266,
+      268,
+      286
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w045_UP16AB7788_tilt.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 45,
+    "car_box": [
+      154,
+      126,
+      307,
+      306
+    ],
+    "plate_rect": [
+      208,
+      274,
+      253,
+      294
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_MH20AB1234_clean.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 60,
+    "car_box": [
+      147,
+      96,
+      351,
+      330
+    ],
+    "plate_rect": [
+      219,
+      292,
+      279,
+      318
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_MH20AB1234_blur.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 60,
+    "car_box": [
+      127,
+      91,
+      331,
+      325
+    ],
+    "plate_rect": [
+      199,
+      287,
+      259,
+      313
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_MH20AB1234_noise.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 60,
+    "car_box": [
+      143,
+      100,
+      347,
+      334
+    ],
+    "plate_rect": [
+      215,
+      296,
+      275,
+      322
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_MH20AB1234_compressed.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 60,
+    "car_box": [
+      143,
+      90,
+      347,
+      324
+    ],
+    "plate_rect": [
+      215,
+      286,
+      275,
+      312
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_MH20AB1234_tilt.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 60,
+    "car_box": [
+      141,
+      96,
+      345,
+      330
+    ],
+    "plate_rect": [
+      213,
+      292,
+      273,
+      318
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TS09DP4567_clean.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 60,
+    "car_box": [
+      143,
+      85,
+      347,
+      319
+    ],
+    "plate_rect": [
+      215,
+      281,
+      275,
+      307
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TS09DP4567_blur.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 60,
+    "car_box": [
+      148,
+      94,
+      352,
+      328
+    ],
+    "plate_rect": [
+      220,
+      290,
+      280,
+      316
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TS09DP4567_noise.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 60,
+    "car_box": [
+      140,
+      94,
+      344,
+      328
+    ],
+    "plate_rect": [
+      212,
+      290,
+      272,
+      316
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TS09DP4567_compressed.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 60,
+    "car_box": [
+      138,
+      88,
+      342,
+      322
+    ],
+    "plate_rect": [
+      210,
+      284,
+      270,
+      310
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TS09DP4567_tilt.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 60,
+    "car_box": [
+      146,
+      94,
+      350,
+      328
+    ],
+    "plate_rect": [
+      218,
+      290,
+      278,
+      316
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_DL12CD8901_clean.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 60,
+    "car_box": [
+      141,
+      90,
+      345,
+      324
+    ],
+    "plate_rect": [
+      213,
+      286,
+      273,
+      312
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_DL12CD8901_blur.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 60,
+    "car_box": [
+      143,
+      89,
+      347,
+      323
+    ],
+    "plate_rect": [
+      215,
+      285,
+      275,
+      311
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_DL12CD8901_noise.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 60,
+    "car_box": [
+      136,
+      94,
+      340,
+      328
+    ],
+    "plate_rect": [
+      208,
+      290,
+      268,
+      316
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_DL12CD8901_compressed.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 60,
+    "car_box": [
+      148,
+      100,
+      352,
+      334
+    ],
+    "plate_rect": [
+      220,
+      296,
+      280,
+      322
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_DL12CD8901_tilt.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 60,
+    "car_box": [
+      127,
+      88,
+      331,
+      322
+    ],
+    "plate_rect": [
+      199,
+      284,
+      259,
+      310
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_KA01MN2345_clean.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 60,
+    "car_box": [
+      136,
+      93,
+      340,
+      327
+    ],
+    "plate_rect": [
+      208,
+      289,
+      268,
+      315
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_KA01MN2345_blur.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 60,
+    "car_box": [
+      145,
+      96,
+      349,
+      330
+    ],
+    "plate_rect": [
+      217,
+      292,
+      277,
+      318
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_KA01MN2345_noise.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 60,
+    "car_box": [
+      129,
+      95,
+      333,
+      329
+    ],
+    "plate_rect": [
+      201,
+      291,
+      261,
+      317
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_KA01MN2345_compressed.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 60,
+    "car_box": [
+      134,
+      100,
+      338,
+      334
+    ],
+    "plate_rect": [
+      206,
+      296,
+      266,
+      322
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_KA01MN2345_tilt.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 60,
+    "car_box": [
+      148,
+      93,
+      352,
+      327
+    ],
+    "plate_rect": [
+      220,
+      289,
+      280,
+      315
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_GJ18BB5678_clean.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 60,
+    "car_box": [
+      144,
+      98,
+      348,
+      332
+    ],
+    "plate_rect": [
+      216,
+      294,
+      276,
+      320
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_GJ18BB5678_blur.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 60,
+    "car_box": [
+      133,
+      100,
+      337,
+      334
+    ],
+    "plate_rect": [
+      205,
+      296,
+      265,
+      322
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_GJ18BB5678_noise.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 60,
+    "car_box": [
+      136,
+      87,
+      340,
+      321
+    ],
+    "plate_rect": [
+      208,
+      283,
+      268,
+      309
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_GJ18BB5678_compressed.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 60,
+    "car_box": [
+      139,
+      90,
+      343,
+      324
+    ],
+    "plate_rect": [
+      211,
+      286,
+      271,
+      312
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_GJ18BB5678_tilt.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 60,
+    "car_box": [
+      142,
+      98,
+      346,
+      332
+    ],
+    "plate_rect": [
+      214,
+      294,
+      274,
+      320
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TN09AX1122_clean.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 60,
+    "car_box": [
+      132,
+      95,
+      336,
+      329
+    ],
+    "plate_rect": [
+      204,
+      291,
+      264,
+      317
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TN09AX1122_blur.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 60,
+    "car_box": [
+      139,
+      100,
+      343,
+      334
+    ],
+    "plate_rect": [
+      211,
+      296,
+      271,
+      322
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TN09AX1122_noise.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 60,
+    "car_box": [
+      128,
+      95,
+      332,
+      329
+    ],
+    "plate_rect": [
+      200,
+      291,
+      260,
+      317
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TN09AX1122_compressed.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 60,
+    "car_box": [
+      126,
+      98,
+      330,
+      332
+    ],
+    "plate_rect": [
+      198,
+      294,
+      258,
+      320
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_TN09AX1122_tilt.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 60,
+    "car_box": [
+      139,
+      93,
+      343,
+      327
+    ],
+    "plate_rect": [
+      211,
+      289,
+      271,
+      315
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_23AH1234_clean.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 60,
+    "car_box": [
+      140,
+      99,
+      344,
+      333
+    ],
+    "plate_rect": [
+      212,
+      295,
+      272,
+      321
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_23AH1234_blur.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 60,
+    "car_box": [
+      137,
+      87,
+      341,
+      321
+    ],
+    "plate_rect": [
+      209,
+      283,
+      269,
+      309
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_23AH1234_noise.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 60,
+    "car_box": [
+      130,
+      86,
+      334,
+      320
+    ],
+    "plate_rect": [
+      202,
+      282,
+      262,
+      308
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_23AH1234_compressed.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 60,
+    "car_box": [
+      132,
+      86,
+      336,
+      320
+    ],
+    "plate_rect": [
+      204,
+      282,
+      264,
+      308
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_23AH1234_tilt.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 60,
+    "car_box": [
+      129,
+      96,
+      333,
+      330
+    ],
+    "plate_rect": [
+      201,
+      292,
+      261,
+      318
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_UP16AB7788_clean.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 60,
+    "car_box": [
+      141,
+      96,
+      345,
+      330
+    ],
+    "plate_rect": [
+      213,
+      292,
+      273,
+      318
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_UP16AB7788_blur.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 60,
+    "car_box": [
+      131,
+      87,
+      335,
+      321
+    ],
+    "plate_rect": [
+      203,
+      283,
+      263,
+      309
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_UP16AB7788_noise.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 60,
+    "car_box": [
+      129,
+      99,
+      333,
+      333
+    ],
+    "plate_rect": [
+      201,
+      295,
+      261,
+      321
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_UP16AB7788_compressed.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 60,
+    "car_box": [
+      135,
+      99,
+      339,
+      333
+    ],
+    "plate_rect": [
+      207,
+      295,
+      267,
+      321
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w060_UP16AB7788_tilt.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 60,
+    "car_box": [
+      136,
+      100,
+      340,
+      334
+    ],
+    "plate_rect": [
+      208,
+      296,
+      268,
+      322
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_MH20AB1234_clean.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 80,
+    "car_box": [
+      99,
+      58,
+      371,
+      360
+    ],
+    "plate_rect": [
+      195,
+      313,
+      275,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_MH20AB1234_blur.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 80,
+    "car_box": [
+      98,
+      55,
+      370,
+      360
+    ],
+    "plate_rect": [
+      194,
+      313,
+      274,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_MH20AB1234_noise.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 80,
+    "car_box": [
+      112,
+      58,
+      384,
+      360
+    ],
+    "plate_rect": [
+      208,
+      313,
+      288,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_MH20AB1234_compressed.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 80,
+    "car_box": [
+      92,
+      55,
+      364,
+      360
+    ],
+    "plate_rect": [
+      188,
+      313,
+      268,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_MH20AB1234_tilt.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 80,
+    "car_box": [
+      113,
+      57,
+      385,
+      360
+    ],
+    "plate_rect": [
+      209,
+      313,
+      289,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TS09DP4567_clean.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 80,
+    "car_box": [
+      102,
+      58,
+      374,
+      360
+    ],
+    "plate_rect": [
+      198,
+      313,
+      278,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TS09DP4567_blur.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 80,
+    "car_box": [
+      99,
+      45,
+      371,
+      360
+    ],
+    "plate_rect": [
+      195,
+      313,
+      275,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TS09DP4567_noise.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 80,
+    "car_box": [
+      104,
+      45,
+      376,
+      360
+    ],
+    "plate_rect": [
+      200,
+      313,
+      280,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TS09DP4567_compressed.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 80,
+    "car_box": [
+      109,
+      55,
+      381,
+      360
+    ],
+    "plate_rect": [
+      205,
+      313,
+      285,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TS09DP4567_tilt.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 80,
+    "car_box": [
+      105,
+      51,
+      377,
+      360
+    ],
+    "plate_rect": [
+      201,
+      313,
+      281,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_DL12CD8901_clean.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 80,
+    "car_box": [
+      109,
+      52,
+      381,
+      360
+    ],
+    "plate_rect": [
+      205,
+      313,
+      285,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_DL12CD8901_blur.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 80,
+    "car_box": [
+      103,
+      55,
+      375,
+      360
+    ],
+    "plate_rect": [
+      199,
+      313,
+      279,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_DL12CD8901_noise.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 80,
+    "car_box": [
+      112,
+      47,
+      384,
+      360
+    ],
+    "plate_rect": [
+      208,
+      313,
+      288,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_DL12CD8901_compressed.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 80,
+    "car_box": [
+      104,
+      60,
+      376,
+      360
+    ],
+    "plate_rect": [
+      200,
+      313,
+      280,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_DL12CD8901_tilt.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 80,
+    "car_box": [
+      110,
+      60,
+      382,
+      360
+    ],
+    "plate_rect": [
+      206,
+      313,
+      286,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_KA01MN2345_clean.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 80,
+    "car_box": [
+      103,
+      53,
+      375,
+      360
+    ],
+    "plate_rect": [
+      199,
+      313,
+      279,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_KA01MN2345_blur.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 80,
+    "car_box": [
+      115,
+      47,
+      387,
+      360
+    ],
+    "plate_rect": [
+      211,
+      313,
+      291,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_KA01MN2345_noise.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 80,
+    "car_box": [
+      103,
+      58,
+      375,
+      360
+    ],
+    "plate_rect": [
+      199,
+      313,
+      279,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_KA01MN2345_compressed.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 80,
+    "car_box": [
+      107,
+      54,
+      379,
+      360
+    ],
+    "plate_rect": [
+      203,
+      313,
+      283,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_KA01MN2345_tilt.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 80,
+    "car_box": [
+      102,
+      51,
+      374,
+      360
+    ],
+    "plate_rect": [
+      198,
+      313,
+      278,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_GJ18BB5678_clean.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 80,
+    "car_box": [
+      107,
+      55,
+      379,
+      360
+    ],
+    "plate_rect": [
+      203,
+      313,
+      283,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_GJ18BB5678_blur.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 80,
+    "car_box": [
+      101,
+      56,
+      373,
+      360
+    ],
+    "plate_rect": [
+      197,
+      313,
+      277,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_GJ18BB5678_noise.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 80,
+    "car_box": [
+      92,
+      45,
+      364,
+      360
+    ],
+    "plate_rect": [
+      188,
+      313,
+      268,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_GJ18BB5678_compressed.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 80,
+    "car_box": [
+      114,
+      51,
+      386,
+      360
+    ],
+    "plate_rect": [
+      210,
+      313,
+      290,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_GJ18BB5678_tilt.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 80,
+    "car_box": [
+      99,
+      57,
+      371,
+      360
+    ],
+    "plate_rect": [
+      195,
+      313,
+      275,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TN09AX1122_clean.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 80,
+    "car_box": [
+      104,
+      54,
+      376,
+      360
+    ],
+    "plate_rect": [
+      200,
+      313,
+      280,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TN09AX1122_blur.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 80,
+    "car_box": [
+      113,
+      57,
+      385,
+      360
+    ],
+    "plate_rect": [
+      209,
+      313,
+      289,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TN09AX1122_noise.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 80,
+    "car_box": [
+      93,
+      60,
+      365,
+      360
+    ],
+    "plate_rect": [
+      189,
+      313,
+      269,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TN09AX1122_compressed.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 80,
+    "car_box": [
+      94,
+      55,
+      366,
+      360
+    ],
+    "plate_rect": [
+      190,
+      313,
+      270,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_TN09AX1122_tilt.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 80,
+    "car_box": [
+      99,
+      46,
+      371,
+      360
+    ],
+    "plate_rect": [
+      195,
+      313,
+      275,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_23AH1234_clean.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 80,
+    "car_box": [
+      104,
+      45,
+      376,
+      360
+    ],
+    "plate_rect": [
+      200,
+      313,
+      280,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_23AH1234_blur.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 80,
+    "car_box": [
+      109,
+      52,
+      381,
+      360
+    ],
+    "plate_rect": [
+      205,
+      313,
+      285,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_23AH1234_noise.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 80,
+    "car_box": [
+      108,
+      48,
+      380,
+      360
+    ],
+    "plate_rect": [
+      204,
+      313,
+      284,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_23AH1234_compressed.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 80,
+    "car_box": [
+      108,
+      59,
+      380,
+      360
+    ],
+    "plate_rect": [
+      204,
+      313,
+      284,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_23AH1234_tilt.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 80,
+    "car_box": [
+      99,
+      54,
+      371,
+      360
+    ],
+    "plate_rect": [
+      195,
+      313,
+      275,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_UP16AB7788_clean.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 80,
+    "car_box": [
+      94,
+      49,
+      366,
+      360
+    ],
+    "plate_rect": [
+      190,
+      313,
+      270,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_UP16AB7788_blur.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 80,
+    "car_box": [
+      115,
+      47,
+      387,
+      360
+    ],
+    "plate_rect": [
+      211,
+      313,
+      291,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_UP16AB7788_noise.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 80,
+    "car_box": [
+      92,
+      49,
+      364,
+      360
+    ],
+    "plate_rect": [
+      188,
+      313,
+      268,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_UP16AB7788_compressed.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 80,
+    "car_box": [
+      102,
+      60,
+      374,
+      360
+    ],
+    "plate_rect": [
+      198,
+      313,
+      278,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w080_UP16AB7788_tilt.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 80,
+    "car_box": [
+      113,
+      57,
+      385,
+      360
+    ],
+    "plate_rect": [
+      209,
+      313,
+      289,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_MH20AB1234_clean.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 110,
+    "car_box": [
+      42,
+      0,
+      416,
+      360
+    ],
+    "plate_rect": [
+      174,
+      300,
+      284,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_MH20AB1234_blur.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 110,
+    "car_box": [
+      64,
+      0,
+      438,
+      360
+    ],
+    "plate_rect": [
+      196,
+      300,
+      306,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_MH20AB1234_noise.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 110,
+    "car_box": [
+      53,
+      0,
+      427,
+      360
+    ],
+    "plate_rect": [
+      185,
+      300,
+      295,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_MH20AB1234_compressed.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 110,
+    "car_box": [
+      51,
+      0,
+      425,
+      360
+    ],
+    "plate_rect": [
+      183,
+      300,
+      293,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_MH20AB1234_tilt.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 110,
+    "car_box": [
+      54,
+      0,
+      428,
+      360
+    ],
+    "plate_rect": [
+      186,
+      300,
+      296,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TS09DP4567_clean.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 110,
+    "car_box": [
+      55,
+      0,
+      429,
+      360
+    ],
+    "plate_rect": [
+      187,
+      300,
+      297,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TS09DP4567_blur.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 110,
+    "car_box": [
+      63,
+      0,
+      437,
+      360
+    ],
+    "plate_rect": [
+      195,
+      300,
+      305,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TS09DP4567_noise.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 110,
+    "car_box": [
+      59,
+      0,
+      433,
+      360
+    ],
+    "plate_rect": [
+      191,
+      300,
+      301,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TS09DP4567_compressed.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 110,
+    "car_box": [
+      50,
+      0,
+      424,
+      360
+    ],
+    "plate_rect": [
+      182,
+      300,
+      292,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TS09DP4567_tilt.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 110,
+    "car_box": [
+      62,
+      0,
+      436,
+      360
+    ],
+    "plate_rect": [
+      194,
+      300,
+      304,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_DL12CD8901_clean.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 110,
+    "car_box": [
+      60,
+      0,
+      434,
+      360
+    ],
+    "plate_rect": [
+      192,
+      300,
+      302,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_DL12CD8901_blur.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 110,
+    "car_box": [
+      60,
+      0,
+      434,
+      360
+    ],
+    "plate_rect": [
+      192,
+      300,
+      302,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_DL12CD8901_noise.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 110,
+    "car_box": [
+      49,
+      0,
+      423,
+      360
+    ],
+    "plate_rect": [
+      181,
+      300,
+      291,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_DL12CD8901_compressed.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 110,
+    "car_box": [
+      60,
+      0,
+      434,
+      360
+    ],
+    "plate_rect": [
+      192,
+      300,
+      302,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_DL12CD8901_tilt.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 110,
+    "car_box": [
+      49,
+      0,
+      423,
+      360
+    ],
+    "plate_rect": [
+      181,
+      300,
+      291,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_KA01MN2345_clean.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 110,
+    "car_box": [
+      58,
+      0,
+      432,
+      360
+    ],
+    "plate_rect": [
+      190,
+      300,
+      300,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_KA01MN2345_blur.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 110,
+    "car_box": [
+      46,
+      0,
+      420,
+      360
+    ],
+    "plate_rect": [
+      178,
+      300,
+      288,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_KA01MN2345_noise.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 110,
+    "car_box": [
+      57,
+      0,
+      431,
+      360
+    ],
+    "plate_rect": [
+      189,
+      300,
+      299,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_KA01MN2345_compressed.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 110,
+    "car_box": [
+      54,
+      0,
+      428,
+      360
+    ],
+    "plate_rect": [
+      186,
+      300,
+      296,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_KA01MN2345_tilt.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 110,
+    "car_box": [
+      64,
+      0,
+      438,
+      360
+    ],
+    "plate_rect": [
+      196,
+      300,
+      306,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_GJ18BB5678_clean.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 110,
+    "car_box": [
+      46,
+      0,
+      420,
+      360
+    ],
+    "plate_rect": [
+      178,
+      300,
+      288,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_GJ18BB5678_blur.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 110,
+    "car_box": [
+      57,
+      0,
+      431,
+      360
+    ],
+    "plate_rect": [
+      189,
+      300,
+      299,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_GJ18BB5678_noise.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 110,
+    "car_box": [
+      59,
+      0,
+      433,
+      360
+    ],
+    "plate_rect": [
+      191,
+      300,
+      301,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_GJ18BB5678_compressed.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 110,
+    "car_box": [
+      64,
+      1,
+      438,
+      360
+    ],
+    "plate_rect": [
+      196,
+      300,
+      306,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_GJ18BB5678_tilt.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 110,
+    "car_box": [
+      49,
+      0,
+      423,
+      360
+    ],
+    "plate_rect": [
+      181,
+      300,
+      291,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TN09AX1122_clean.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 110,
+    "car_box": [
+      47,
+      0,
+      421,
+      360
+    ],
+    "plate_rect": [
+      179,
+      300,
+      289,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TN09AX1122_blur.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 110,
+    "car_box": [
+      41,
+      0,
+      415,
+      360
+    ],
+    "plate_rect": [
+      173,
+      300,
+      283,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TN09AX1122_noise.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 110,
+    "car_box": [
+      54,
+      0,
+      428,
+      360
+    ],
+    "plate_rect": [
+      186,
+      300,
+      296,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TN09AX1122_compressed.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 110,
+    "car_box": [
+      51,
+      0,
+      425,
+      360
+    ],
+    "plate_rect": [
+      183,
+      300,
+      293,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_TN09AX1122_tilt.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 110,
+    "car_box": [
+      50,
+      0,
+      424,
+      360
+    ],
+    "plate_rect": [
+      182,
+      300,
+      292,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_23AH1234_clean.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 110,
+    "car_box": [
+      48,
+      0,
+      422,
+      360
+    ],
+    "plate_rect": [
+      180,
+      300,
+      290,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_23AH1234_blur.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 110,
+    "car_box": [
+      43,
+      1,
+      417,
+      360
+    ],
+    "plate_rect": [
+      175,
+      300,
+      285,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_23AH1234_noise.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 110,
+    "car_box": [
+      60,
+      0,
+      434,
+      360
+    ],
+    "plate_rect": [
+      192,
+      300,
+      302,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_23AH1234_compressed.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 110,
+    "car_box": [
+      56,
+      0,
+      430,
+      360
+    ],
+    "plate_rect": [
+      188,
+      300,
+      298,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_23AH1234_tilt.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 110,
+    "car_box": [
+      63,
+      0,
+      437,
+      360
+    ],
+    "plate_rect": [
+      195,
+      300,
+      305,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_UP16AB7788_clean.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 110,
+    "car_box": [
+      47,
+      0,
+      421,
+      360
+    ],
+    "plate_rect": [
+      179,
+      300,
+      289,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_UP16AB7788_blur.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 110,
+    "car_box": [
+      47,
+      0,
+      421,
+      360
+    ],
+    "plate_rect": [
+      179,
+      300,
+      289,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_UP16AB7788_noise.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 110,
+    "car_box": [
+      63,
+      0,
+      437,
+      360
+    ],
+    "plate_rect": [
+      195,
+      300,
+      305,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_UP16AB7788_compressed.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 110,
+    "car_box": [
+      50,
+      0,
+      424,
+      360
+    ],
+    "plate_rect": [
+      182,
+      300,
+      292,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w110_UP16AB7788_tilt.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 110,
+    "car_box": [
+      51,
+      0,
+      425,
+      360
+    ],
+    "plate_rect": [
+      183,
+      300,
+      293,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_MH20AB1234_clean.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      153,
+      283,
+      303,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_MH20AB1234_blur.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      160,
+      283,
+      310,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_MH20AB1234_noise.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      157,
+      283,
+      307,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_MH20AB1234_compressed.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      160,
+      283,
+      310,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_MH20AB1234_tilt.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      170,
+      283,
+      320,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TS09DP4567_clean.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      165,
+      283,
+      315,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TS09DP4567_blur.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      165,
+      283,
+      315,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TS09DP4567_noise.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      155,
+      283,
+      305,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TS09DP4567_compressed.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      174,
+      283,
+      324,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TS09DP4567_tilt.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      169,
+      283,
+      319,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_DL12CD8901_clean.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      159,
+      283,
+      309,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_DL12CD8901_blur.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      156,
+      283,
+      306,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_DL12CD8901_noise.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      153,
+      283,
+      303,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_DL12CD8901_compressed.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      157,
+      283,
+      307,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_DL12CD8901_tilt.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      153,
+      283,
+      303,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_KA01MN2345_clean.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      173,
+      283,
+      323,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_KA01MN2345_blur.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      176,
+      283,
+      326,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_KA01MN2345_noise.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      170,
+      283,
+      320,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_KA01MN2345_compressed.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      167,
+      283,
+      317,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_KA01MN2345_tilt.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      156,
+      283,
+      306,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_GJ18BB5678_clean.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      171,
+      283,
+      321,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_GJ18BB5678_blur.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      161,
+      283,
+      311,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_GJ18BB5678_noise.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      162,
+      283,
+      312,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_GJ18BB5678_compressed.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      161,
+      283,
+      311,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_GJ18BB5678_tilt.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      172,
+      283,
+      322,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TN09AX1122_clean.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      173,
+      283,
+      323,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TN09AX1122_blur.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      174,
+      283,
+      324,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TN09AX1122_noise.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      162,
+      283,
+      312,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TN09AX1122_compressed.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      168,
+      283,
+      318,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_TN09AX1122_tilt.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      165,
+      283,
+      315,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_23AH1234_clean.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      167,
+      283,
+      317,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_23AH1234_blur.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      157,
+      283,
+      307,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_23AH1234_noise.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      168,
+      283,
+      318,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_23AH1234_compressed.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      155,
+      283,
+      305,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_23AH1234_tilt.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      163,
+      283,
+      313,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_UP16AB7788_clean.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      169,
+      283,
+      319,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_UP16AB7788_blur.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      165,
+      283,
+      315,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_UP16AB7788_noise.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      171,
+      283,
+      321,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_UP16AB7788_compressed.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      168,
+      283,
+      318,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w150_UP16AB7788_tilt.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 150,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      172,
+      283,
+      322,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_MH20AB1234_clean.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      149,
+      261,
+      349,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_MH20AB1234_blur.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      138,
+      261,
+      338,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_MH20AB1234_noise.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      145,
+      261,
+      345,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_MH20AB1234_compressed.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      149,
+      261,
+      349,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_MH20AB1234_tilt.png",
+    "ground_truth": "MH20AB1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      151,
+      261,
+      351,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TS09DP4567_clean.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      151,
+      261,
+      351,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TS09DP4567_blur.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      145,
+      261,
+      345,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TS09DP4567_noise.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      135,
+      261,
+      335,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TS09DP4567_compressed.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      140,
+      261,
+      340,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TS09DP4567_tilt.png",
+    "ground_truth": "TS09DP4567",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      144,
+      261,
+      344,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_DL12CD8901_clean.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      137,
+      261,
+      337,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_DL12CD8901_blur.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      130,
+      261,
+      330,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_DL12CD8901_noise.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      148,
+      261,
+      348,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_DL12CD8901_compressed.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      142,
+      261,
+      342,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_DL12CD8901_tilt.png",
+    "ground_truth": "DL12CD8901",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      134,
+      261,
+      334,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_KA01MN2345_clean.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      132,
+      261,
+      332,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_KA01MN2345_blur.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      138,
+      261,
+      338,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_KA01MN2345_noise.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      146,
+      261,
+      346,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_KA01MN2345_compressed.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      140,
+      261,
+      340,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_KA01MN2345_tilt.png",
+    "ground_truth": "KA01MN2345",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      132,
+      261,
+      332,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_GJ18BB5678_clean.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      150,
+      261,
+      350,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_GJ18BB5678_blur.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      139,
+      261,
+      339,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_GJ18BB5678_noise.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      145,
+      261,
+      345,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_GJ18BB5678_compressed.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      148,
+      261,
+      348,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_GJ18BB5678_tilt.png",
+    "ground_truth": "GJ18BB5678",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      130,
+      261,
+      330,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TN09AX1122_clean.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      145,
+      261,
+      345,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TN09AX1122_blur.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      137,
+      261,
+      337,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TN09AX1122_noise.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      141,
+      261,
+      341,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TN09AX1122_compressed.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      144,
+      261,
+      344,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_TN09AX1122_tilt.png",
+    "ground_truth": "TN09AX1122",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      150,
+      261,
+      350,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_23AH1234_clean.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      141,
+      261,
+      341,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_23AH1234_blur.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      151,
+      261,
+      351,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_23AH1234_noise.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      130,
+      261,
+      330,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_23AH1234_compressed.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      131,
+      261,
+      331,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_23AH1234_tilt.png",
+    "ground_truth": "23AH1234",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      140,
+      261,
+      340,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_UP16AB7788_clean.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      133,
+      261,
+      333,
+      348
+    ],
+    "degradation": "clean",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_UP16AB7788_blur.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      143,
+      261,
+      343,
+      348
+    ],
+    "degradation": "blur",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_UP16AB7788_noise.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      130,
+      261,
+      330,
+      348
+    ],
+    "degradation": "noise",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_UP16AB7788_compressed.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      140,
+      261,
+      340,
+      348
+    ],
+    "degradation": "compressed",
+    "scene_size": [
+      480,
+      360
+    ]
+  },
+  {
+    "file": "w200_UP16AB7788_tilt.png",
+    "ground_truth": "UP16AB7788",
+    "plate_width_px": 200,
+    "car_box": [
+      0,
+      0,
+      480,
+      360
+    ],
+    "plate_rect": [
+      141,
+      261,
+      341,
+      348
+    ],
+    "degradation": "tilt",
+    "scene_size": [
+      480,
+      360
+    ]
+  }
+]

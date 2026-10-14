@@ -1,0 +1,7 @@
+# The build image installs its own Linux dependencies: the host's node_modules
+# holds Windows binaries (esbuild, rollup) that cannot run in the container, and
+# dist/ is an output, never an input.
+node_modules
+dist
+.git
+*.log

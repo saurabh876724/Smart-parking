@@ -1,0 +1,188 @@
+# All tuning knobs live here, not in code.
+# Phase 3 acceptance target: >=95% slot accuracy on labelled frames, no flicker.
+
+detection:
+  model_path: models/yolo11s.pt   # anchored to the project root; falls back to a
+                                  # download only for names Ultralytics knows
+  confidence: 0.35
+  imgsz: 640
+  device: cuda                  # auto-falls back to cpu
+  classes: [2, 3, 5, 7]         # COCO: car, motorcycle, bus, truck
+  frame_stride: 1               # set to 2-3 on a LOT camera to cut GPU load
+  half: true                    # FP16, CUDA only
+
+occupancy:
+  # Scores are containment: how much of a vehicle's ground footprint sits
+  # inside the slot. See geometry.containment_score for why this replaces the
+  # doc's slot-denominated overlap for assignment.
+  occupy_score: 0.45            # containment needed to claim a slot
+  any_slot_score: 0.20          # below this on every slot -> vehicle is in the aisle
+  straddle_score: 0.20          # slot coverage on two slots at once -> across the line
+  occupied_after_s: 0.6         # short: show the operator the change quickly
+  free_after_s: 8.0             # long: a false FREE double-books a slot
+  footprint_ratio: 0.4          # lower band of the box = the part on the tarmac
+
+# Phase 4: a track must be slow enough to plausibly be parking before it is
+# allowed to contribute slot evidence. Gating is eligibility only - containment
+# still decides *which* slot, and the FSM still decides *when* to commit.
+velocity_gating:
+  enabled: true
+  # Measured on the demo clips (478x850 @ 30fps): stationary tracks sit at a
+  # 1-9 px/s median, the car driving into a bay at ~72 px/s median. 30 px/s is
+  # ~4x the stationary median and ~2.4x below the driving one. This is a
+  # per-camera number in pixels/second at source resolution - re-measure it if
+  # the view, the resolution or the lens changes.
+  max_parking_velocity: 30.0
+  smoothing_window: 15          # frames the least-squares slope is fitted over
+                                # (~0.5s at 30fps inference, ~1.5s at --stride 3)
+  max_sample_gap_s: 1.0         # longer gap than this restarts the window
+
+# Phase 5: plate reading for gate/entrance cameras. Reads plates only - it does
+# not book slots, and occupancy does not read it. Numbers below are measured
+# (scripts/bench_anpr.py on the rendered fixture, scripts/measure_plates.py on
+# real footage); the comments say which.
+anpr:
+  enabled: true
+  detector:
+    confidence: 0.30
+    # Below this width OCR cannot resolve the characters however good the engine
+    # is. Fixture: recognition on the detector's own box was exact on 100% of
+    # crops proposed at >=125px and fell away sharply under 100px, so 110px sits
+    # at the edge of the readable band rather than in it.
+    min_plate_width: 110
+    max_plate_width: 520
+    min_aspect_ratio: 1.4       # single-line Indian plate is ~2:1
+    max_aspect_ratio: 7.0
+    min_vehicle_width: 120      # narrower vehicles carry no legible plate here
+    roi_bottom_fraction: 0.75   # plates sit low; screening the whole box finds signage
+    max_candidates: 3
+    det_limit_type: max         # see AnprDetectorConfig: this was the faster, higher-recall scaling
+    det_side_len: 640
+    crop_pad_px: 12             # text detectors lose strokes at the crop edge
+  ocr:
+    enabled: true
+    engine: rapidocr            # ONNX Runtime PP-OCRv4, CPU - no second DL stack
+    min_text_score: 0.50        # a garbled frame must not outvote a clean one
+    use_orientation_cls: false  # plate crops are already upright
+    preprocess:
+      # Only grayscale survived the ablation: it was the one switch that cost
+      # nothing and raised character accuracy. Everything else measured as a
+      # loss, so the defaults are off. See README Phase 5, preprocessing table.
+      min_crop_height: 0        # 0 = never upscale; upscaling measured worse
+      target_height: 64
+      grayscale: true
+      clahe: false
+      denoise: false
+      sharpen: false
+  validation:
+    require_region_code: false  # do not reject legitimate series without one
+    repair_confusables: true
+    max_repair_edits: 1         # two wrong characters is a garbage read, not a typo
+    repair_lengths: [10]        # repair only full-length reads; never shorten or lengthen to fit
+    repair_letter_positions: false
+    extra_patterns: []
+    strip_words: [INDIA, BHARAT]
+    min_length: 6
+    max_length: 12
+  voting:
+    window_size: 7              # rolling ballots per track
+    minimum_observations: 3     # one OCR frame is never an answer
+    minimum_agreement: 0.60
+    max_track_age_s: 3.0        # an unseen track loses its window: a reused id
+                                # cannot inherit the previous vehicle's plate
+
+# Phase 6: entry/exit logic for gate cameras. Only timers live here - the
+# geometry (lines and zone) is per camera in configs/gates/<id>.json, drawn by
+# scripts/calibrate.py, because it is a picture of one viewpoint and changes
+# with the camera, not with the tuning.
+gate:
+  enabled: true
+  dwell_exit_s: 12.0        # unseen inside the exit zone for this long -> it left
+  track_timeout_s: 5.0      # longer silence than this is a new vehicle, so a
+                            # recycled ByteTrack id can fire an entry again
+  min_ocr_confidence: 0.80  # below this the session is kept but flagged for review
+
+# Phase 7: where the persistence layer writes. Relative sqlite paths resolve
+# from the project root (core/config.py :: database_url_for), not the working
+# directory. Swapping to Postgres means changing this URL only - nothing in db/
+# reads this file. The environment variable SMART_PARKING_DATABASE_URL overrides
+# this value for a deployment or a scratch run; it is the one name both the
+# running API and scripts/migrate.py read, so the two cannot disagree.
+database:
+  url: "sqlite:///data/smart_parking.db"
+  echo: false
+
+# Phase 8: the HTTP surface. Like `database`, this is read by the config loader
+# only - api/ is handed an ApiConfig and never opens this file.
+#
+# There is deliberately NO secret value in here. A signing key that lives in a
+# committed file is a system where anyone who has read the repository can mint
+# an ADMIN token, so the key comes from the environment variable named below or
+# from the file scripts/dev_secret.py writes.
+api:
+  prefix: /api/v1
+  jwt_secret_env: SMART_PARKING_JWT_SECRET
+  jwt_secret_file: data/.secret      # never the key itself, just where to find it
+  access_token_ttl_s: 900            # 15 min: a leaked token is a brief problem
+  refresh_token_ttl_s: 43200         # 12 h: one shift, without a logout mid-call
+  # What the WebSocket handshake carries. A socket URL is copied into nginx's
+  # access log, a proxy log and the browser's history, so it takes a one-time
+  # ticket from POST /auth/ws-ticket rather than the access token above.
+  ws_ticket_ttl_s: 15
+  # Failed sign-ins per email+address inside the window before the endpoint stops
+  # reading the password hash at all and answers 429 with Retry-After. Counts are
+  # per process: a second uvicorn worker gets its own budget.
+  login_throttle_window_s: 300
+  login_throttle_max_failures: 10
+  page_size: 50
+  ws_queue_size: 200                 # per connected dashboard, before a drop
+  mjpeg:
+    fps: 5.0                         # frames handed out per viewer, not per frame
+    quality: 80
+    max_width: 960                   # 0 = source width; a stream is not evidence
+  pipeline:
+    # Cameras the server starts for itself so /stream.mjpg has something to send.
+    # Each one costs a decoder and a YOLO context on this machine's 6 GB GPU, so
+    # the list is the two clips this project can actually run; gate_cam1 is the
+    # 8.5 k-frame road clip and is left off on purpose.
+    enabled: true
+    cameras:
+      - camera: lot_cam1
+        # Real footage, so the detector runs on it: no tracks_file.
+        loop: true
+      - camera: gate_visit
+        # A rendered fixture has no cars for YOLO to find, so its labelled boxes
+        # are replayed and every frame it draws says SYNTHETIC.
+        tracks_file: data/fixtures/gate_visit_tracks.json
+        # Off: what this camera would "read" is a drawn fixture plate, and a
+        # stream is a picture a browser keeps - not evidence.
+        read_plates: false
+        loop: true
+    replay: true                     # inline frames: a dropped gate frame is a missed crossing
+    frame_stride: null               # null = the detection stage's own stride
+    send_summary_over_ws: true       # stored as no row, but the dashboard wants the counters
+    # A served clip plays at its own frame rate. Unpaced, a replay loop runs as
+    # fast as the decoder can manage: a flickering picture, a pinned core and
+    # hundreds of events a second. Turn this off only to soak-test the pipeline.
+    pace_replay: true
+    # ...and only the first pass of a loop is a set of visits. The second pass of
+    # the same clip is the same cars doing the same thing again, and the database
+    # keys a session on the run's own id, so it would refuse every one of those
+    # events - correctly, and forever. The frames still stream; the events do not.
+    first_pass_events_only: true
+  cors:
+    # Default-deny. The deployed dashboard is same-origin - nginx proxies /api
+    # and /ws to this service - so no origin needs listing here. Add one only
+    # when a browser calls :8000 directly (e.g. http://localhost:5173 for a Vite
+    # dev server started without its proxy); test_api_config.py asserts the
+    # shipped file stays closed, so such a change is a recorded decision.
+    allow_origins: []
+    # Tokens go in an Authorization header, not a cookie, so credentials have no
+    # reason to travel and `allow_credentials: true` with a wide list is the pair
+    # that turns CORS into a way to read another site's sessions.
+    allow_credentials: false
+
+render:
+  show: false                   # true opens an OpenCV window
+  save_dir: null                # set to dump sample frames
+  max_frames: null

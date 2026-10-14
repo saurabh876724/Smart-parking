@@ -1,0 +1,200 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+ * Design tokens.
+
+ * One place names the palette so a bay cannot be a slightly different green in
+ * two cards, and so the status colours below stay the three the FSM actually
+ * has states for: measured-free, measured-occupied, and not-being-told.
+ * ------------------------------------------------------------------------- */
+@theme {
+  /* Surfaces: deep navy, never black, so panels can sit on each other. */
+  --color-ink-950: #04060f;
+  --color-ink-900: #070c1b;
+  --color-ink-880: #0a1124;
+  --color-ink-850: #0d162e;
+  --color-ink-800: #111c39;
+  --color-ink-750: #16244a;
+  --color-line: #1c2b52;
+  --color-line-strong: #26386a;
+
+  /* Text. */
+  --color-mist-50: #f2f6ff;
+  --color-mist-200: #cdd8f2;
+  --color-mist-400: #93a4c8;
+  --color-mist-600: #64769e;
+
+  /* Accent: electric blue into cyan. */
+  --color-volt-300: #7dd3fc;
+  --color-volt-400: #38bdf8;
+  --color-volt-500: #2f80ed;
+  --color-volt-600: #1d5fd6;
+  --color-volt-700: #16408f;
+
+  /* The three occupancy answers. Gray is deliberately not green-ish: an
+   * unreported bay must not read as a spare one. */
+  --color-bay-free: #22c55e;
+  --color-bay-occupied: #f0445c;
+  --color-bay-unknown: #7c8aa5;
+
+  --font-sans: 'Inter', 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1100px 520px at 78% -12%, rgba(47, 128, 237, 0.13), transparent 62%),
+      radial-gradient(760px 420px at -6% 8%, rgba(56, 189, 248, 0.09), transparent 60%),
+      var(--color-ink-950);
+    color: var(--color-mist-200);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.01em;
+  }
+
+  /* A dashboard is a thing you scroll: keep the bar out of the palette fight. */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1b2b53;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #26386a;
+    background-clip: content-box;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-volt-400);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  /* Numbers should not wobble as the socket updates them. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* The one panel recipe: every card in the app is this, so borders, radius and
+   * elevation never drift between pages. */
+  .panel {
+    background: linear-gradient(180deg, rgba(17, 28, 57, 0.72), rgba(10, 17, 36, 0.86));
+    border: 1px solid var(--color-line);
+    border-radius: 16px;
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.04) inset,
+      0 18px 40px -28px rgba(2, 6, 23, 0.9);
+  }
+
+  .panel-hover {
+    transition:
+      border-color 160ms ease,
+      transform 160ms ease,
+      box-shadow 160ms ease;
+  }
+  .panel-hover:hover {
+    border-color: var(--color-line-strong);
+    transform: translateY(-1px);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.05) inset,
+      0 22px 46px -26px rgba(2, 6, 23, 0.95);
+  }
+
+  .field {
+    background: rgba(6, 11, 26, 0.72);
+    border: 1px solid var(--color-line);
+    border-radius: 10px;
+    color: var(--color-mist-50);
+    transition:
+      border-color 140ms ease,
+      box-shadow 140ms ease;
+  }
+  .field:hover {
+    border-color: var(--color-line-strong);
+  }
+  .field:focus {
+    border-color: var(--color-volt-500);
+    box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.18);
+    outline: none;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    border-radius: 10px;
+    padding: 0.55rem 0.7rem;
+    color: var(--color-mist-400);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition:
+      background 140ms ease,
+      color 140ms ease;
+  }
+  .nav-item:hover {
+    background: rgba(47, 128, 237, 0.1);
+    color: var(--color-mist-50);
+  }
+  .nav-item-active {
+    background: linear-gradient(90deg, rgba(47, 128, 237, 0.24), rgba(56, 189, 248, 0.08));
+    color: var(--color-mist-50);
+    box-shadow: inset 2px 0 0 var(--color-volt-400);
+  }
+
+  /* Restrained motion: a rise on mount, a pulse for "live". Nothing loops
+   * forever, because an operator watches this screen for an hour at a time. */
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .rise {
+    animation: rise 220ms ease-out both;
+  }
+
+  @keyframes heartbeat {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    55% {
+      opacity: 0.45;
+      transform: scale(0.82);
+    }
+  }
+  .heartbeat {
+    animation: heartbeat 1800ms ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rise,
+    .heartbeat {
+      animation: none;
+    }
+    .panel-hover,
+    .nav-item,
+    .field {
+      transition: none;
+    }
+  }
+}

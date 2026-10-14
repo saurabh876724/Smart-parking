@@ -1,0 +1,22 @@
+# Frontend build job - compiles the React app and exits.
+#
+# The compose service mounts the host's frontend/dist at /app/dist, so the
+# bundle lands in the exact directory nginx serves. The previous image ran a
+# second nginx nobody proxied to, and its build output went to a named volume
+# while nginx read a stale host directory - which is why publishing a new
+# bundle used to need a manual `docker cp` out of a stopped container.
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files and install dependencies
+COPY package*.json ./
+RUN npm ci
+
+# Copy source and build (dist/ is the mounted host directory)
+COPY . ./
+RUN npm run build
+
+# Succeed only if the bundle actually landed: an empty mount would otherwise
+# look like a successful build to compose, and nginx would serve 404s.
+CMD ["sh", "-c", "test -f /app/dist/index.html && echo 'frontend build complete'"]
