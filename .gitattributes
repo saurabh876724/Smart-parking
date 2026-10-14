@@ -1,0 +1,4 @@
+# Bash scripts here run inside Linux containers and under Git Bash. A CRLF checkout
+# makes the shebang unreadable ("bad interpreter"), so they must keep LF on disk
+# whatever core.autocrlf is set to on the machine that cloned the repository.
+*.sh text eol=lf

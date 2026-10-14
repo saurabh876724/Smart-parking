@@ -10,7 +10,7 @@ statuses onto them and the layout starts moving on its own.
 Idempotent: a camera or slot that already exists is skipped, so this is safe to
 re-run after a reboot.
 
-    python scripts/seed_demo.py --email you@example.com --password 'Admin@123456'
+    python scripts/seed_demo.py --email you@example.com --password '<your admin password>'
 """
 
 from __future__ import annotations

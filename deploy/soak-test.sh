@@ -54,9 +54,18 @@ log() {
 # /health is authenticated by design (it leaks camera names and pipeline error
 # paths), so the probe logs in first. A login that fails here would otherwise make
 # every API check below false-fail with a 401 and read as an outage.
-SOAK_EMAIL="${SOAK_EMAIL:-saurabhbhusare123@gmail.com}"
-SOAK_PASSWORD="${SOAK_PASSWORD:-Admin@123456}"
-COMPOSE_FILE="$(cd "$(dirname "$0")" && pwd)/docker-compose.yml"
+# The probe account is not this script's to know: `deploy/.env` already names one for
+# the compose healthcheck, so it is read from there instead of defaulted to a literal.
+# A hard-coded credential here would be somebody's password in a public repository.
+DEPLOY_DIR="$(cd "$(dirname "$0")" && pwd)"
+SOAK_EMAIL="${SOAK_EMAIL:-$(sed -n 's/^HEALTH_EMAIL=//p' "$DEPLOY_DIR/.env" 2>/dev/null | head -1)}"
+SOAK_PASSWORD="${SOAK_PASSWORD:-$(sed -n 's/^HEALTH_PASSWORD=//p' "$DEPLOY_DIR/.env" 2>/dev/null | head -1)}"
+if [ -z "$SOAK_EMAIL" ] || [ -z "$SOAK_PASSWORD" ]; then
+    echo "No probe account: set HEALTH_EMAIL and HEALTH_PASSWORD in $DEPLOY_DIR/.env," >&2
+    echo "or export SOAK_EMAIL and SOAK_PASSWORD before running this script." >&2
+    exit 1
+fi
+COMPOSE_FILE="$DEPLOY_DIR/docker-compose.yml"
 
 get_token() {
     docker compose -f "$COMPOSE_FILE" exec -T \
