@@ -42,9 +42,9 @@ VERIFIED (not claimed - measured)
 PLANNED (not built)
 BoT-SORT motion compensation for merged detections, re-calibration for the real mounting position, and entrance-camera footage to validate ANPR properly.
 
-Code: https://github.com/saurabh876724/Smart-parking
+Code + 10-page technical report: https://github.com/saurabh876724/Smart-parking
 
-#ComputerVision #YOLO #Python #FastAPI #React #OpenCV #MachineLearning
+#ComputerVision #YOLO #Python #FastAPI #React #MachineLearning
 ```
 
 ---
@@ -162,4 +162,5 @@ measurements); and operational hardening - retention policy for history tables, 
 ### Links
 
 - Repository: https://github.com/saurabh876724/Smart-parking
+- Technical report (10 pages, PDF): https://github.com/saurabh876724/Smart-parking/blob/main/docs/Smart_Parking_System_Technical_Report.pdf
 - Architecture and working-flow diagrams, verified project report, and demo script: `docs/` in the repository
