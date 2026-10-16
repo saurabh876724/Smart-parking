@@ -49,6 +49,17 @@ camera -> frame reader (grabber if live, inline if replay) -> YOLO vehicles
                 role-checked; plate text masked unless the role may reveal it
 ```
 
+## Documentation
+
+| Document | What it is |
+|---|---|
+| [`docs/Smart_Parking_System_Technical_Report.pdf`](docs/Smart_Parking_System_Technical_Report.pdf) | 10-page technical report: overview, feature/status tables, architecture, AI pipeline, API + security, frontend, verification evidence, risks |
+| [`docs/project_report.md`](docs/project_report.md) | Verified audit of the running system: status verdict, feature table with file:line evidence, test results, defect log |
+| [`docs/architecture.md`](docs/architecture.md) | System architecture diagram (Mermaid) + component walkthrough |
+| [`docs/working_flow.md`](docs/working_flow.md) | Working-flow diagram (Mermaid) + decision branches |
+| [`docs/viva_and_demo.md`](docs/viva_and_demo.md) | Viva explanation, 5-minute demo script, Q&A, limitations |
+| [`docs/linkedin_post.md`](docs/linkedin_post.md) | Project write-up for LinkedIn (short post + full article) |
+
 ## Quick start
 
 Environment: this project runs on the system Python 3.10 that already has
